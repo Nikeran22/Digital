@@ -74,6 +74,56 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{ Controlling a 7-segments display}
+
+	Figure 1 shows a 7-segment decoder module whose input bits $C2 C1 C0$ drive a 7 segment display through the bits $HEX0_{0}->HEX0_{6}$ 
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale = 0.7]{Niki_puntoA/system.png}
+		\caption{7-segment decoder + display}
+	\end{figure}	
+
+	Figure 2 shows the truth table to be implemented for the 7-segment decoder. As shown just the characters $H E L O$ will be implemented.
+	The sequent logical states can be easily derived from the table:
+	\[HEX6=\overline{C2}\cdot\overline{C1}\]
+	\[HEX5=\overline{C2}\]
+	\[HEX4=\overline{C2}\]
+	\[HEX3=\overline{C2}\cdot(C0+C1)\]
+	\[HEX2=\overline{C2}\cdot\overline{C1}\cdot\overline{C0}+\cdot\overline{C2}\cdot C1\cdot C0\]
+	\[HEX1=\overline{C2}\cdot\overline{C1}\cdot\overline{C0}+\cdot\overline{C2}\cdot C1\cdot C0\]
+	\[HEX0=\overline{C2}\cdot C0\]
+	
+
+	\begin{figure}[h]
+		\centering
+	 	\includegraphics[scale = 0.45]{Niki_puntoA/tabella.png}
+	 	\caption{decoder truth table}
+	\end{figure}	
+	 
+	 Finally the logic states are implemented using gates as shown in $figure 3$.\newline
+	 The circuit is then described into VHDL using a dataflow style approach, the VHDL file is called $puntoA.vhd$. 
+	 
+	 
+	 
+	  \begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale = 0.65]{Niki_puntoA/schema.png}
+	  \caption{decoder gates implementation}
+  	\end{figure}		
+  
+  The VHDL entry has been finally simulated via  $testbench approach$ where every possible input combination has been considered validating the output.
+  The testbench results are shown below in figure 4.
+  
+  \begin{figure}[!h]
+  	\centering
+  	\includegraphics[scale = 0.65]{Niki_puntoA/Capturef.png}
+  	\caption{Testbench results}
+  \end{figure}
+
+
+
+
+
 \section{ Multiplexing the 7-segments display output}
 \section{ Binary to Decimal converter}
 \section{ Binary-to-BCD Converter}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.4)  24 MAR 2019 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.4)  24 MAR 2019 17:43
 entering extended mode
 **./lab2.tex
 (lab2.tex
@@ -567,23 +567,61 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab2.aux) ) 
+g>]
+<Niki_puntoA/system.png, id=10, 410.65923pt x 167.12437pt>
+File: Niki_puntoA/system.png Graphic file (type png)
+<use Niki_puntoA/system.png>
+Package pdftex.def Info: Niki_puntoA/system.png  used on input line 82.
+(pdftex.def)             Requested size: 287.45949pt x 116.98625pt.
+<Niki_puntoA/tabella.png, id=12, 931.98187pt x 162.6075pt>
+File: Niki_puntoA/tabella.png Graphic file (type png)
+<use Niki_puntoA/tabella.png>
+Package pdftex.def Info: Niki_puntoA/tabella.png  used on input line 99.
+(pdftex.def)             Requested size: 419.38797pt x 73.1727pt.
+<Niki_puntoA/schema.png, id=13, 635.2533pt x 581.41216pt>
+File: Niki_puntoA/schema.png Graphic file (type png)
+<use Niki_puntoA/schema.png>
+Package pdftex.def Info: Niki_puntoA/schema.png  used on input line 110.
+(pdftex.def)             Requested size: 412.90974pt x 377.91342pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Niki_puntoA/Capturef.png, id=14, 697.8572pt x 51.56766pt>
+File: Niki_puntoA/Capturef.png Graphic file (type png)
+<use Niki_puntoA/Capturef.png>
+Package pdftex.def Info: Niki_puntoA/Capturef.png  used on input line 119.
+(pdftex.def)             Requested size: 453.60179pt x 33.51855pt.
+
+Overfull \hbox (26.17026pt too wide) in paragraph at lines 119--120
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1 <./Niki_puntoA/system.png> <./Niki_puntoA/tabella.png>] [2 <./Niki_puntoA/sc
+hema.png> <./Niki_puntoA/Capturef.png>] (lab2.aux) ) 
 Here is how much of TeX's memory you used:
- 16307 strings out of 492970
- 310315 string characters out of 3126594
- 362795 words of memory out of 3000000
- 20057 multiletter control sequences out of 15000+200000
+ 16329 strings out of 492970
+ 310814 string characters out of 3126594
+ 365795 words of memory out of 3000000
+ 20073 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab2.pdf (2 pages, 74674 bytes).
+ 40i,11n,63p,814b,500s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/niki
+l/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmcsc10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nikil/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nikil/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab2.pdf (3 pages, 210450 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
