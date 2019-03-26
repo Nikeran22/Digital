@@ -8,6 +8,6 @@ end decimal_mux;
 
 architecture decimal_mux_behavior of decimal_mux is 
 begin
-	figure <="1111110" when (sel = '0') else
-		     "0110000" when (sel = '1');
+	figure <="1000000" when (sel = '0') else
+		     "1111001" when (sel = '1');
 end decimal_mux_behavior; 

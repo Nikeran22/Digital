@@ -32,7 +32,7 @@ architecture Converter_behaviour of Converter is
     begin
     
     conv:inner_converter port map(v=>sw,m=>unit_bcd,z=>decimal_sel);
-    mux:decimal_mux port map(sel=>decimal_sel,figure=>HEX0);
-    unit_bcd_7s: bcd_to_7s port map(bcd=>unit_bcd,segments=>HEX1);
+    mux:decimal_mux port map(sel=>decimal_sel,figure=>HEX1);
+    unit_bcd_7s: bcd_to_7s port map(bcd=>unit_bcd,segments=>HEX0);
 
 end Converter_behaviour;
