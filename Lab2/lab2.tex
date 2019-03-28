@@ -16,7 +16,7 @@
 
 \title{Lab 02}													% Title
 \author{G 03}														% Author
-\date{24 Mar 2019}														% Date
+\date{26 Mar 2019}														% Date
 
 \makeatletter
 \let\thetitle\@title
@@ -142,7 +142,7 @@
 Each sub-circuit has been implemented and tested separately than in the $Part2$ entity all components are used to describe the circuit.
 
 \subsection{Multiplexer}
-Each letter code has been assigned to a signal for code readability. Than the output of the multiplexer has been described using the $when$ structure.
+Each letter code has been assigned to a signal for code readability. Than the output of the multiplexer has been described using the $when$ structure.\newline
 The testbench of this component assigns all possible combinations of the selection inputs, then the output is checked using the waveforms.
 \subsection{Shifter}
 The shifter output has been set as a concatenation of two parts of the input for meaningful input and forced to zero for all other inputs. The behaviour implemented is described in $figure 7$.
@@ -155,10 +155,11 @@ This component has been tested by fixing the input to a concatenation of 5 3-bit
 \subsection{7-segment decoder}
 This component could have been reused from the previous point but it has been quickly reimplemented behaviourally to be able to display also the letters $C$,$P$, and $F$. Although, the testbench was reused taking care to verify also the new letters in the waveform simulation.
 \subsection{Testbench of the whole circuit}
-To be able to verify the correct behaviour of the circuit several signals have been created.
+To be able to verify the correct behaviour of the circuit several signals have been created. \newline
 A signal for each letter with values for each letter corresponding to the 7 bits of the display code.
-An $error$ signal that is used as a flag to quickly detect possible errors.
-The circuit first tested by fixing the multiplexer selection to $00$ corresponding to the $HELLO$ word and assigning all the possible combinations to the shifter selection inputs. With several if statements the cycling of the $HELLO$ word is checked. 
+An $error$ signal that is used as a flag to quickly detect possible errors.\newline
+In the port map the displays are assigned in inverse order to test view the output in the simulation with the first letter in the $HEX0$ display instead of the $HEX4$ display.\newline
+The circuit first tested by fixing the multiplexer selection to $00$ corresponding to the $HELLO$ word and assigning all the possible combinations to the shifter selection inputs. With several if statements the cycling of the $HELLO$ word is checked. \newline
 Than the shifter selection inputs are forced to $000$ and is verified that all the other words are displayed properly.
 \section{ Binary to Decimal converter}
 punto 3

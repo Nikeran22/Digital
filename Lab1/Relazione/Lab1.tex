@@ -16,7 +16,7 @@
 
 \title{Lab 01}													% Title
 \author{G 03}														% Author
-\date{24 Mar 2019}														% Date
+\date{19 Mar 2019}														% Date
 
 \makeatletter
 \let\thetitle\@title
@@ -76,12 +76,26 @@
 \section{ Controlling the LEDs }
 
 \section{2-to-1 Multiplexer}
-As figure x shows we have been implementing a 2-to-1 Multiplexer using a stuctural approach. Since its internal implementation its pretty trivial we will not discuss it any further.
+As figure 1 shows we are implementing a 2-to-1 Multiplexer using a stuctural approach. Since its internal implementation its pretty trivial we will not discuss it any further.
 
-aggiungere figura x
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.5]{image2.jpg}
+	\caption{multiplexer + truth table}
+\end{figure}
 
 Its VHDL code has been written under Quartus prime. Than a testbench was developed under modelsim. In the testbench we fixed the two multplexed inputs and than varing the selection bit we checked the behaviour.
 
 After the simulation was succesful we impoted the pin assignements into Quartus prime and after compiling and loading it on the board we verified the actual behaviour.
+\\\\
+\section{5-to-1 Multiplexer}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.3]{image1.jpg}
+	\caption{multiplexer + truth table}
+\end{figure}
+We're now interested in designing the circuit shown in figure 2, where the output signal can be chosen between 5 different input signals with a 3 bit control signal as shown in the truth table. \\The circuit model has been implemented using a behavioural approach, that leads to a faster but less customizable solution to design a 5 to 1 MUX.\\
+The circuit has been proved to work thanks to a testbech simulation, checking the correspondence of input-output following the already cited truth table. \\
+Finally the vhdl code has been loaded into the hardware fpga showing positive results as expected by simulation.
 
 \end{document}

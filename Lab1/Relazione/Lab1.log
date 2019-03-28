@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  28 MAR 2019 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  28 MAR 2019 16:49
 entering extended mode
-**./lab2.tex
-(lab2.tex
+**./Lab1.tex
+(Lab1.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Users\lberc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -484,8 +484,8 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ("C:\Users\lberc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\physics\physics.st
 y"
 Package: physics 
-) (lab2.aux)
-\openout1 = `lab2.aux'.
+) (Lab1.aux)
+\openout1 = `Lab1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -568,87 +568,47 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
 
 {C:/Users/lberc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
 g>]
-<Niki_puntoA/system.png, id=10, 410.65923pt x 167.12437pt>
-File: Niki_puntoA/system.png Graphic file (type png)
-<use Niki_puntoA/system.png>
-Package pdftex.def Info: Niki_puntoA/system.png  used on input line 82.
-(pdftex.def)             Requested size: 287.45949pt x 116.98625pt.
-<Niki_puntoA/tabella.png, id=12, 931.98187pt x 162.6075pt>
-File: Niki_puntoA/tabella.png Graphic file (type png)
-<use Niki_puntoA/tabella.png>
-Package pdftex.def Info: Niki_puntoA/tabella.png  used on input line 99.
-(pdftex.def)             Requested size: 419.38797pt x 73.1727pt.
-<Niki_puntoA/schema.png, id=13, 635.2533pt x 581.41216pt>
-File: Niki_puntoA/schema.png Graphic file (type png)
-<use Niki_puntoA/schema.png>
-Package pdftex.def Info: Niki_puntoA/schema.png  used on input line 110.
-(pdftex.def)             Requested size: 412.90974pt x 377.91342pt.
+<image2.jpg, id=10, 596.98032pt x 197.98969pt>
+File: image2.jpg Graphic file (type jpg)
+<use image2.jpg>
+Package pdftex.def Info: image2.jpg  used on input line 83.
+(pdftex.def)             Requested size: 298.48943pt x 98.9946pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Niki_puntoA/Capturef.png, id=14, 697.8572pt x 51.56766pt>
-File: Niki_puntoA/Capturef.png Graphic file (type png)
-<use Niki_puntoA/Capturef.png>
-Package pdftex.def Info: Niki_puntoA/Capturef.png  used on input line 119.
-(pdftex.def)             Requested size: 453.60179pt x 33.51855pt.
-
-Overfull \hbox (26.17026pt too wide) in paragraph at lines 119--120
- [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
-<Berchialla_PuntoB/image1.jpg, id=15, 398.288pt x 229.12267pt>
-File: Berchialla_PuntoB/image1.jpg Graphic file (type jpg)
-<use Berchialla_PuntoB/image1.jpg>
-Package pdftex.def Info: Berchialla_PuntoB/image1.jpg  used on input line 130.
-(pdftex.def)             Requested size: 278.79968pt x 160.38475pt.
-[1 <./Niki_puntoA/system.png> <./Niki_puntoA/tabella.png>]
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Berchialla_PuntoB/image2.jpg, id=24, 111.41624pt x 180.675pt>
-File: Berchialla_PuntoB/image2.jpg Graphic file (type jpg)
-<use Berchialla_PuntoB/image2.jpg>
-Package pdftex.def Info: Berchialla_PuntoB/image2.jpg  used on input line 138.
-(pdftex.def)             Requested size: 44.5657pt x 72.2687pt.
+<image1.jpg, id=11, 1187.93813pt x 547.2947pt>
+File: image1.jpg Graphic file (type jpg)
+<use image1.jpg>
+Package pdftex.def Info: image1.jpg  used on input line 94.
+(pdftex.def)             Requested size: 356.38419pt x 164.18967pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./Niki_puntoA/schema.png> <./Niki_puntoA/Capturef.png>]
-<Berchialla_PuntoB/image3.jpg, id=30, 1663.71562pt x 362.85562pt>
-File: Berchialla_PuntoB/image3.jpg Graphic file (type jpg)
-<use Berchialla_PuntoB/image3.jpg>
-Package pdftex.def Info: Berchialla_PuntoB/image3.jpg  used on input line 151.
-(pdftex.def)             Requested size: 332.73723pt x 72.56984pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./Berchialla_PuntoB/image1.jpg> <./Berchialla_PuntoB/image2.jpg>] [4 <./Ber
-chialla_PuntoB/image3.jpg>] (lab2.aux) ) 
+[1 <./image2.jpg>] [2 <./image1.jpg>] (Lab1.aux) ) 
 Here is how much of TeX's memory you used:
- 16346 strings out of 492970
- 311248 string characters out of 3126594
- 365795 words of memory out of 3000000
- 20086 multiletter control sequences out of 15000+200000
- 540188 words of font info for 52 fonts, out of 3000000 for 9000
+ 16317 strings out of 492970
+ 310469 string characters out of 3126594
+ 363795 words of memory out of 3000000
+ 20065 multiletter control sequences out of 15000+200000
+ 539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lberc/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lbe
-rc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lberc/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab2.pdf (5 pages, 354079 bytes).
+ 40i,11n,63p,814b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lberc/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mcsc10.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb>
+Output written on Lab1.pdf (3 pages, 153776 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
