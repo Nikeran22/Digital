@@ -139,11 +139,27 @@
 	\caption{7-segment display character codes}
 \end{figure}
 
-Each sub-circuit has been implemented and tested separately than in the 7segments_out all component are used to describe the circuit.
+Each sub-circuit has been implemented and tested separately than in the $Part2$ entity all components are used to describe the circuit.
 
 \subsection{Multiplexer}
-Each letter code has been assigned to a signal 
-
+Each letter code has been assigned to a signal for code readability. Than the output of the multiplexer has been described using the $when$ structure.
+The testbench of this component assigns all possible combinations of the selection inputs, then the output is checked using the waveforms.
+\subsection{Shifter}
+The shifter output has been set as a concatenation of two parts of the input for meaningful input and forced to zero for all other inputs. The behaviour implemented is described in $figure 7$.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.2]{Berchialla_PuntoB/image3.jpg}
+	\caption{Example of shifter behaviour with the word "HELLO"}
+\end{figure}
+This component has been tested by fixing the input to a concatenation of 5 3-bit binary numbers in rising order and assigning all possible combination of the $SW$ inputs. Than the behaviour has been checked in the simulated waveforms.
+\subsection{7-segment decoder}
+This component could have been reused from the previous point but it has been quickly reimplemented behaviourally to be able to display also the letters $C$,$P$, and $F$. Although, the testbench was reused taking care to verify also the new letters in the waveform simulation.
+\subsection{Testbench of the whole circuit}
+To be able to verify the correct behaviour of the circuit several signals have been created.
+A signal for each letter with values for each letter corresponding to the 7 bits of the display code.
+An $error$ signal that is used as a flag to quickly detect possible errors.
+The circuit first tested by fixing the multiplexer selection to $00$ corresponding to the $HELLO$ word and assigning all the possible combinations to the shifter selection inputs. With several if statements the cycling of the $HELLO$ word is checked. 
+Than the shifter selection inputs are forced to $000$ and is verified that all the other words are displayed properly.
 \section{ Binary to Decimal converter}
 punto 3
 \section{ Binary-to-BCD Converter}

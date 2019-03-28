@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  25 MAR 2019 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  28 MAR 2019 16:09
 entering extended mode
 **./lab2.tex
 (lab2.tex
@@ -603,34 +603,52 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Berchialla_PuntoB/image1.jpg, id=15, 398.288pt x 229.12267pt>
 File: Berchialla_PuntoB/image1.jpg Graphic file (type jpg)
 <use Berchialla_PuntoB/image1.jpg>
-Package pdftex.def Info: Berchialla_PuntoB/image1.jpg  used on input line 133.
+Package pdftex.def Info: Berchialla_PuntoB/image1.jpg  used on input line 130.
 (pdftex.def)             Requested size: 278.79968pt x 160.38475pt.
 [1 <./Niki_puntoA/system.png> <./Niki_puntoA/tabella.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./Niki_puntoA/schema.png> <./Niki_puntoA/Capturef.png>] [3 <./Berchialla_Pu
-ntoB/image1.jpg>] (lab2.aux) ) 
+<Berchialla_PuntoB/image2.jpg, id=24, 111.41624pt x 180.675pt>
+File: Berchialla_PuntoB/image2.jpg Graphic file (type jpg)
+<use Berchialla_PuntoB/image2.jpg>
+Package pdftex.def Info: Berchialla_PuntoB/image2.jpg  used on input line 138.
+(pdftex.def)             Requested size: 44.5657pt x 72.2687pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./Niki_puntoA/schema.png> <./Niki_puntoA/Capturef.png>]
+<Berchialla_PuntoB/image3.jpg, id=30, 1663.71562pt x 362.85562pt>
+File: Berchialla_PuntoB/image3.jpg Graphic file (type jpg)
+<use Berchialla_PuntoB/image3.jpg>
+Package pdftex.def Info: Berchialla_PuntoB/image3.jpg  used on input line 151.
+(pdftex.def)             Requested size: 332.73723pt x 72.56984pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./Berchialla_PuntoB/image1.jpg> <./Berchialla_PuntoB/image2.jpg>] [4 <./Ber
+chialla_PuntoB/image3.jpg>] (lab2.aux) ) 
 Here is how much of TeX's memory you used:
- 16335 strings out of 492970
- 310949 string characters out of 3126594
+ 16346 strings out of 492970
+ 311248 string characters out of 3126594
  365795 words of memory out of 3000000
- 20077 multiletter control sequences out of 15000+200000
- 539881 words of font info for 51 fonts, out of 3000000 for 9000
+ 20086 multiletter control sequences out of 15000+200000
+ 540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,500s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lberc/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users
-/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab2.pdf (4 pages, 238700 bytes).
+ 40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lberc/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lbe
+rc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lberc/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab2.pdf (5 pages, 353878 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
