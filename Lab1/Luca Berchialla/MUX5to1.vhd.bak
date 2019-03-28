@@ -11,7 +11,7 @@ port		(SW : in std_logic_vector(8 downto 0);
 end MUX5to1;
 
 -- architecture
-architecture Behavior of MUX5to1 is
+architecture mux5to1 of MUX5to1 is
 begin
 	LEDR <= 		"101" when (SW(8 downto 6) = "000") else
 				"010" when (SW(8 downto 6) = "001") else
