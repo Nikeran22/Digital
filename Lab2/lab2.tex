@@ -125,17 +125,24 @@
 
 
 \section{ Multiplexing the 7-segments display output}
-
-	Figure 5 shows...... 
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.7]{Berchialla_PuntoB/image1.jpg}
 	\caption{multiplexer + shifter + 7-segment decoder + display}
 \end{figure}
+	Figure 5 shows the architecture of the implemented circuit. It is composed by a three-bit wide 4-to-1 multiplexer, which has the data inputs fixed to the words we want to display following the codification of figure 6. A shifter that rotates the selected word in a circular fashion and 5 7-segments decoders followed by their respective displays.
 
 
-explanation
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.4]{Berchialla_PuntoB/image2.jpg}
+	\caption{7-segment display character codes}
+\end{figure}
+
+Each sub-circuit has been implemented and tested separately than in the 7segments_out all component are used to describe the circuit.
+
+\subsection{Multiplexer}
+Each letter code has been assigned to a signal 
 
 \section{ Binary to Decimal converter}
 punto 3
