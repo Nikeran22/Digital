@@ -10,14 +10,6 @@ end inner_converter;
 
 architecture inner_converter_behaviour of inner_converter is
 begin
-    convert: process (v)
-    begin
-        if v >= "1010" then 
-        z <= '1';
-        m <= std_logic_vector(v-"1010");
-        else 
-        z <= '0';
-        m <= std_logic_vector(v);
-        end if;
-    end process convert;
+    z <= '1' when v >= "1010" else '0';
+    m <= std_logic_vector(v-"1010") when v >= "1010" else std_logic_vector(v);
 end inner_converter_behaviour;
