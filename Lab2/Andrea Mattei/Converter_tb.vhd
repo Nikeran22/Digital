@@ -21,7 +21,7 @@ architecture Converter_tb_behaviour of Converter_tb is
     u: Converter port map(sw=>sw_tb,HEX0=>HEX0_tb,HEX1=>HEX1_tb);
     process
     begin
-        for i in 0 to 15 loop --tests all the 16 possible values
+        for i in 0 to 15 loop --tests all the 16 possible input values
             sw_tb<=to_unsigned(i,sw_tb'length);
             wait for WAITING_TIME;
         end loop;

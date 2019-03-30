@@ -2,23 +2,23 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity decimal_mux_tb is
-end decimal_mux_tb;
+entity tens_mux_tb is
+end tens_mux_tb;
 
-architecture decimal_mux_tb_behaviour of decimal_mux_tb is
+architecture tens_mux_tb_behaviour of tens_mux_tb is
     
     constant WAITING_TIME:time :=20 ns;
 
     signal sel_tb: std_logic;
-    signal figure_tb: std_logic_vector (6 downto 0);
+    signal digit_tb: std_logic_vector (6 downto 0);
 
-    component decimal_mux
+    component tens_mux
         port( sel: in std_logic;
-            figure: out std_logic_vector (6 downto 0));
+            digit: out std_logic_vector (6 downto 0));
     end component;
 
     begin 
-    u: decimal_mux port map(sel=>sel_tb, figure=>figure_tb);
+    u: tens_mux port map(sel=>sel_tb, digit=>digit_tb);
     process
     begin
         sel_tb<='0';
@@ -27,4 +27,4 @@ architecture decimal_mux_tb_behaviour of decimal_mux_tb is
         wait for WAITING_TIME;
         wait;
     end process;
-end decimal_mux_tb_behaviour;
+end tens_mux_tb_behaviour;
