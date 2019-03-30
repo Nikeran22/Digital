@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  28 MAR 2019 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  30 MAR 2019 17:25
 entering extended mode
 **./Lab1.tex
 (Lab1.tex
@@ -571,22 +571,22 @@ g>]
 <image2.jpg, id=10, 596.98032pt x 197.98969pt>
 File: image2.jpg Graphic file (type jpg)
 <use image2.jpg>
-Package pdftex.def Info: image2.jpg  used on input line 83.
+Package pdftex.def Info: image2.jpg  used on input line 87.
 (pdftex.def)             Requested size: 298.48943pt x 98.9946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 <image1.jpg, id=11, 1187.93813pt x 547.2947pt>
 File: image1.jpg Graphic file (type jpg)
 <use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 94.
+Package pdftex.def Info: image1.jpg  used on input line 98.
 (pdftex.def)             Requested size: 356.38419pt x 164.18967pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -595,7 +595,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Here is how much of TeX's memory you used:
  16317 strings out of 492970
  310469 string characters out of 3126594
- 363795 words of memory out of 3000000
+ 364795 words of memory out of 3000000
  20065 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -606,7 +606,7 @@ AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
 /Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mcsc10.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr12.pfb>
-Output written on Lab1.pdf (3 pages, 153776 bytes).
+Output written on Lab1.pdf (3 pages, 154670 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
