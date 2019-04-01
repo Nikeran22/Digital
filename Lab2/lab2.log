@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  1 APR 2019 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  1 APR 2019 14:01
 entering extended mode
 **./lab2.tex
 (lab2.tex
@@ -627,28 +627,35 @@ Package pdftex.def Info: Berchialla_PuntoB/image3.jpg  used on input line 151.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./Berchialla_PuntoB/image1.jpg> <./Berchialla_PuntoB/image2.jpg>] [4 <./Ber
-chialla_PuntoB/image3.jpg>] (lab2.aux) ) 
+[3 <./Berchialla_PuntoB/image1.jpg> <./Berchialla_PuntoB/image2.jpg>]
+<"Andrea Mattei"/RTL_point3.jpg, id=34, 953.36176pt x 242.1045pt>
+File: "Andrea Mattei"/RTL_point3.jpg Graphic file (type jpg)
+<use "Andrea Mattei"/RTL_point3.jpg>
+Package pdftex.def Info: "Andrea Mattei"/RTL_point3.jpg  used on input line 172
+.
+(pdftex.def)             Requested size: 381.33795pt x 96.84007pt.
+ [4 <./Berchialla_PuntoB/image3.jpg>] [5 <./Andrea Mattei/RTL_point3.jpg>] (lab
+2.aux) ) 
 Here is how much of TeX's memory you used:
- 16346 strings out of 492970
- 311248 string characters out of 3126594
- 365795 words of memory out of 3000000
- 20086 multiletter control sequences out of 15000+200000
+ 16353 strings out of 492970
+ 311435 string characters out of 3126594
+ 366795 words of memory out of 3000000
+ 20091 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lberc/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lbe
-rc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lberc/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab2.pdf (5 pages, 354079 bytes).
+<C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lberc/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lberc/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb>
+Output written on lab2.pdf (6 pages, 429904 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
