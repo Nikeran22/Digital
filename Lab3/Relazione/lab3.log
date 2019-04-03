@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  3 APR 2019 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  3 APR 2019 15:38
 entering extended mode
 **./lab3.tex
 (lab3.tex
@@ -567,23 +567,49 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/lberc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab3.aux) ) 
+g>]
+<immagini/B1.jpg, id=10, 393.51015pt x 245.35664pt>
+File: immagini/B1.jpg Graphic file (type jpg)
+<use immagini/B1.jpg>
+Package pdftex.def Info: immagini/B1.jpg  used on input line 80.
+(pdftex.def)             Requested size: 314.80855pt x 196.28557pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+
+ []
+
+<immagini/B2.jpg, id=11, 628.22203pt x 409.1536pt>
+File: immagini/B2.jpg Graphic file (type jpg)
+<use immagini/B2.jpg>
+Package pdftex.def Info: immagini/B2.jpg  used on input line 90.
+(pdftex.def)             Requested size: 251.28435pt x 163.65852pt.
+<immagini/B3.jpg, id=12, 398.61421pt x 256.70906pt>
+File: immagini/B3.jpg Graphic file (type jpg)
+<use immagini/B3.jpg>
+Package pdftex.def Info: immagini/B3.jpg  used on input line 98.
+(pdftex.def)             Requested size: 279.02805pt x 179.6951pt.
+[1 <./immagini/B1.jpg> <./immagini/B2.jpg>] [2 <./immagini/B3.jpg>] (lab3.aux) 
+) 
 Here is how much of TeX's memory you used:
- 16308 strings out of 492970
- 310353 string characters out of 3126594
- 362794 words of memory out of 3000000
- 20058 multiletter control sequences out of 15000+200000
+ 16324 strings out of 492970
+ 310613 string characters out of 3126594
+ 363794 words of memory out of 3000000
+ 20070 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lberc/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lberc/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab3.pdf (2 pages, 73201 bytes).
+ 40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb><C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/lberc/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lberc/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lbe
+rc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+C:/Users/lberc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb>
+Output written on lab3.pdf (3 pages, 309756 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
