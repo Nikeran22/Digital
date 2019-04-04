@@ -98,9 +98,10 @@ A new 7-segments display decoder was needed in order to display properly 2's com
 	\includegraphics[scale = 0.7]{immagini/B3.jpg}
 	\caption{2's complement 7-segments decoder}
 \end{figure}\\
-The top level entity that implements the circuit is in the file $lab3\_es1.vhd$ where all the components needed........
+The top level entity that implements the circuit is in the file $lab3\_es1.vhd$ where all the components needed are instantiated and connected together.\\ As required, the the inputs $A$ and $B$ have been assigned to $SW_{3-0}$ and $SW_{7-4}$ respectively, $KEY_0$ to the negated asynchronous reset input and $KEY_1$ to the clock. The magnitude and the sign of $A$ are displayed in $HEX4$ and $HEX5$ respectively. The same is done for $B$ and $S$ in $HEX2,HEX3$ and $HEX0,HEX1$ respectively. The adder's overflow is shown by means of the red $LEDR_9$.\\
 
-
+\subsection{Testbench}
+To validate the correct behavior of the circuit a testbench was created. The $clock$ signal was created using a process and its period has been fixed to $10ps$, the reset signal instead 
 
 
 
