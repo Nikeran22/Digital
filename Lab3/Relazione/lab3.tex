@@ -125,7 +125,33 @@ Therefore the longest path is the same as the previous section but it starts onl
 punto 3
 
 
-\section{4}
-punto 4
+\section{Multiplier}
+
+The task of this part of the experience is design a 4-bit multiplier using VHDL, the circuit implemented is based on the one in $Figure$ $4$. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.4]{immagini/multiplier-circuit.jpg}
+	\caption{the circuit implemented for the multiplier}       
+
+\end{figure}
+The input of the circuit are the DE10 switch from 0 to 7, the first four represent the first number while the remaining compose the second number.
+The output of the circuit are the first 4 seven-segments displays of the board that are used for displaying hexadecimal numbers. The first 2 displays show the 2 operands while the other 2 display the result.
+The overall architecture ($Figure$ $5$) of the circuit is composed by the multiplier (multiplier.vhd) and 4 bcd to seven-segments converter for driving the displays.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.5]{immagini/RTL_architecture_4.jpg}
+	\caption{the RTL schematics of the overall circuit}       
+
+\end{figure}
+The converters used were the same of the previous parts, since their function is the same.
+For implementing the multiplier 2 type of components were used: 4-bit adders (adder.vhd) and and arrays (and\textunderscore array.vhd).
+The 4-bit adders are composed of 4 full adders and they do the intermediate addition, like the 7-segments converters the full adder components were reused from previous parts.
+The and arrays perfoms the multiplication of one factor by one bit of the other.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.3]{immagini/RTL_multiplier.jpg}
+	\caption{the RTL schematics of the multiplier component}       
+
+\end{figure}
 
 \end{document}
