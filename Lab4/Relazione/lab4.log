@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  6 APR 2019 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  7 APR 2019 12:25
 entering extended mode
 **./lab4.tex
 (lab4.tex
@@ -566,23 +566,74 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] (lab4.aux) ) 
+g>]
+<immagini/SRff.PNG, id=10, 397.485pt x 193.84921pt>
+File: immagini/SRff.PNG Graphic file (type png)
+<use immagini/SRff.PNG>
+Package pdftex.def Info: immagini/SRff.PNG  used on input line 84.
+(pdftex.def)             Requested size: 298.113pt x 145.38654pt.
+<immagini/postmap.PNG, id=12, 784.05421pt x 205.5178pt>
+File: immagini/postmap.PNG Graphic file (type png)
+<use immagini/postmap.PNG>
+Package pdftex.def Info: immagini/postmap.PNG  used on input line 90.
+(pdftex.def)             Requested size: 470.43616pt x 123.31163pt.
+
+Overfull \hbox (43.00462pt too wide) in paragraph at lines 90--91
+ [][] 
+ []
+
+<immagini/table_sr.PNG, id=13, 220.95047pt x 156.585pt>
+File: immagini/table_sr.PNG Graphic file (type png)
+<use immagini/table_sr.PNG>
+Package pdftex.def Info: immagini/table_sr.PNG  used on input line 98.
+(pdftex.def)             Requested size: 132.57129pt x 93.95172pt.
+[1 <./immagini/SRff.PNG> <./immagini/postmap.PNG> <./immagini/table_sr.PNG>]
+<immagini/testbench1.PNG, id=21, 935.74594pt x 105.39375pt>
+File: immagini/testbench1.PNG Graphic file (type png)
+<use immagini/testbench1.PNG>
+Package pdftex.def Info: immagini/testbench1.PNG  used on input line 105.
+(pdftex.def)             Requested size: 421.08179pt x 47.42674pt.
+<immagini/count.PNG, id=22, 454.32234pt x 128.35454pt>
+File: immagini/count.PNG Graphic file (type png)
+<use immagini/count.PNG>
+Package pdftex.def Info: immagini/count.PNG  used on input line 120.
+(pdftex.def)             Requested size: 363.45836pt x 102.68376pt.
+<immagini/fmax.PNG, id=23, 182.18062pt x 28.60687pt>
+File: immagini/fmax.PNG Graphic file (type png)
+<use immagini/fmax.PNG>
+Package pdftex.def Info: immagini/fmax.PNG  used on input line 126.
+(pdftex.def)             Requested size: 163.96103pt x 25.74594pt.
+
+[2 <./immagini/testbench1.PNG> <./immagini/count.PNG> <./immagini/fmax.PNG>]
+<immagini/testbench2.PNG, id=30, 761.46985pt x 141.15234pt>
+File: immagini/testbench2.PNG Graphic file (type png)
+<use immagini/testbench2.PNG>
+Package pdftex.def Info: immagini/testbench2.PNG  used on input line 133.
+(pdftex.def)             Requested size: 456.88544pt x 84.69205pt.
+
+Overfull \hbox (29.4539pt too wide) in paragraph at lines 133--134
+ [][] 
+ []
+
+[3 <./immagini/testbench2.PNG>] (lab4.aux) ) 
 Here is how much of TeX's memory you used:
- 16653 strings out of 492945
- 317385 string characters out of 3126253
- 362970 words of memory out of 3000000
- 20428 multiletter control sequences out of 15000+200000
- 539275 words of font info for 49 fonts, out of 3000000 for 9000
+ 16691 strings out of 492945
+ 318193 string characters out of 3126253
+ 363970 words of memory out of 3000000
+ 20458 multiletter control sequences out of 15000+200000
+ 539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,5n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab4.pdf (1 page, 68610 bytes).
+ 40i,11n,63p,814b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users
+/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10
+.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb>
+Output written on lab4.pdf (4 pages, 361565 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
