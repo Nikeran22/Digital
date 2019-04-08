@@ -16,7 +16,7 @@
 
 \title{Lab 04}													% Title
 \author{G 03}														% Author
-\date{2 Apr 2019}														% Date
+\date{8 Apr 2019}														% Date
 
 \makeatletter
 \let\thetitle\@title
@@ -133,6 +133,32 @@ Finally a testbench had been designed to check the functionality of the circuit,
 			\includegraphics[scale = 0.6]{immagini/testbench2.PNG}
 			\caption{Modelsim Testbench waves}
 \end{figure}
+\section{16-bit synchronous counter version 2}
+\section{Flashing digits from 0 to 9}
+\section{Reaction Timer}
+The RT level circuit to implement the reaction timer is shown in $figure x$. Some non standard components are just the implementation of more standard elements in a single component. This was done in order to accelerate the vhdl description of the circuit and simplify the block scheme.
+\subsection{millisecond counter}
+The purpose of this block is to generate a pulse on the output port connected to $millisecond_signal$ lasting for a clock cicle every millisecond. It has been implemented as a counter that resets and produces a pulse when it reaches the binary equivalent of $50000$. With the DE1 $CLOCK\_50$ clock input at frequency $50MHz$ the circuit counts to $50000$ in $1ms$.
+\subsection{counter comparator}
+This unit starts to count after it is resetted. Its enable signal is in $and$ with the $millisecond_signal$ to enable the counter only every ms and not every clock cycle. \\When the counter reaches the value set by the inputs $SW_{7-0}$ it stops and the $enable_out$ output is asserted to $1$ until the component is reset.
+\subsection{BCD 4digits counter}
+This component is made by four $BCDcounters$ connected in a way that they count, modulus 10, numbers up to four digits. Each digit is represented binary using the $BCD$ code and is connected to a decoder driving its respective 7-segments display. \\
+As shown in $figure xx$ each $BCDcounter$ has an input $enable$ and output $enable_out$, those signals are connected together between consecutive $BCDcounters$. In particular the $enable_out$ output is asserted to 1 when the digit displayed is $9$ in order to enable the following counter in the next period and properly display the number. The period for the counter is set to $1ms$ by taking the $and$ of each enable input with the $millisecond_signal$.
+\subsection{Gated SR latches and connections between blocks}
+Two memory elements have been used to implement the requested behavior. 
+The $MEM0$ element is responsible to generate the enable signal for the $counter_comparator$ when occurs pulse of $KEY_0$. The $KEY_0$ input is connected also to the $Asynchronous_clear$ input of the $counter_comparator$ in order to start to count from $0$ when $KEY_0$ is pressed.
+\\The $MEM1$ generate a signal useful to stop the $BCD_4digits_counter$ to count and turn off the $LEDR_0$. when $KEY_3$ is pressed. In particular the $LEDR_0$ is active from when the time set by the $SW_{7-0}$ is eplaced (thanks $counter_comparator$) and up to when $KEY_3$ is pressed and the complemented output of $MEM1$ is $0$. The $BCD_4digits_counter$ is active in the same amount of time, but since it has to count every millisecond its enable is in $and$ with the $millisecond_signal$.
+\subsection{Testbench}
+To be able to verify easily the behaviour of the circuit a new version:"LAB4\_ES5\_tt has been created. This version does not include the 7-segments decoder, therefore the output is directly taken from the $BCD_4digits_counter$. \\
+As first thing a clock signal with frequency $f=50MHz$ was generated. 
+Then two reaction time measurements cycles are executed with the following parameters:
 
-
+	\begin{tabular}{lll}
+		Cycle & Waiting time & Reaction time \\
+		& 3ms          & 17ms          \\
+		& 1ms          & 21ms         
+	\end{tabular}
+\\
+\\
+Relatively short duration have been chosen in order to make the simulation faster.
 \end{document}
