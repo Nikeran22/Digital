@@ -27,14 +27,7 @@ PROCESS
 BEGIN
 
 
-en<='1';
-res<='1';
-clk<='0';
-WAIT FOR 20 ns;
-en<='1';
-res<='1';
-clk<='1';
-WAIT FOR 20 ns;
+
 
 
 
