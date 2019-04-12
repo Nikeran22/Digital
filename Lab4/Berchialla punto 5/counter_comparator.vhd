@@ -17,6 +17,7 @@ BEGIN
 if(a_clear='1') then 
 count:=(others=>'0');
 stop_count:='0';
+Enable_out<='0';
 else
 if(CK='1' and CK'event) then
 if(enable='1') then

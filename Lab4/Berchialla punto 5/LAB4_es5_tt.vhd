@@ -26,12 +26,12 @@ compare: in STD_LOGIC_VECTOR(7 DOWNTO 0);
 Enable_out: out STD_LOGIC);
 end component; 
 
-component SR_glatch IS
-PORT ( Clk, R, S : IN STD_LOGIC;
+component jk_ff IS
+PORT ( CK, j, k : IN STD_LOGIC;
 Q,Qn : OUT STD_LOGIC);
 end component; 
 
-component millisecond_counter is
+component millisecond_counter_tt is
  Port (CK: in STD_LOGIC;
 Enable_out: out STD_LOGIC);
 end component; 
@@ -51,9 +51,9 @@ en_cc<=m0 and millisecond_signal;
 en_bcd<=(eno_cc and m1) and millisecond_signal;
 LEDR(0)<=eno_cc and m1;
 
-millisecond: millisecond_counter PORT MAP (CLOCK_50,millisecond_signal);
-MEM0: SR_glatch port map (CLOCK_50,KEY(3),KEY(0),m0);
-MEM1: SR_glatch port map (CLOCK_50,KEY(0),KEY(3),mn,m1);
+millisecond: millisecond_counter_tt PORT MAP (CLOCK_50,millisecond_signal);
+MEM0: jk_ff port map (CLOCK_50,KEY(0),KEY(3),m0);
+MEM1: jk_ff port map (CLOCK_50,KEY(3),KEY(0),mn,m1);
 timer: counter_comparator port map (CLOCK_50,en_cc,KEY(0),SW,eno_cc);
 BCD: BCD_4digits_counter port map (CLOCK_50,en_bcd,KEY(0),BCD_count);
 

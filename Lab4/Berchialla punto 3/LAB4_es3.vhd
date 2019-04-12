@@ -6,7 +6,8 @@ USE ieee.std_logic_1164.all;
 --SW0 ->Reset
 
 entity counter16 is
- Port (SW1, KEY0, SW0: in STD_LOGIC;
+ Port (KEY: in STD_LOGIC_VECTOR(0 downto 0);
+ SW : in STD_LOGIC_VECTOR(1 downto 0);
  HEX0, HEX1, HEX2, HEX3 : out STD_LOGIC_VECTOR(6 downto 0));
 end counter16;
 
@@ -32,7 +33,7 @@ end component;
 BEGIN
 
 
-COUNTER0: counter16 PORT MAP (KEY0,SW1,SW0,count);
+COUNTER0: counter16 PORT MAP (KET(0),SW(1),SW(0),count);
 DHEX0: decoderHEX16bit PORT MAP (count(3 downto 0), HEX0);
 DHEX1: decoderHEX16bit PORT MAP (count(7 downto 4), HEX1);
 DHEX2: decoderHEX16bit PORT MAP (count(11 downto 8), HEX2);

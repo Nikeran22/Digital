@@ -35,36 +35,25 @@ BCD_count => BCD_count,
 LEDR(0) => led
 );
 
-ck: Process(CLOCK) -- clock generation 50MHz
+ck: Process(CLOCK) -- clock generation 20ps
 begin
 if (CLOCK='U') then
 CLOCK<='0';
 else
-CLOCK<=not(CLOCK) after 10 ns;
+CLOCK<=not(CLOCK) after 10 ps;
 end if;
 end process;
 
 test: Process
 begin
 KEY<="0000";
-SW<="00000011";  --setting waiting time to 3ms
-wait for 1 ms;
+SW<="11111111";  --setting waiting time to max = 25500 ps
+wait for 40 ps;
 KEY(0)<='1';
-wait for 1 ms;
+wait for 40 ps;
 KEY(0)<='0';
-wait for 15 ms; --want a reaction time of 12ms
+wait for 1025600 ps; --want a reaction time greater than 9999
 KEY(3)<='1';
-wait for 1 ms;
-KEY(3)<='0';
-wait for 5 ms; -- wait to read the reaction time
-SW<="00000001"; -- wait time to 1ms
-KEY(0)<='1'; --resetting
-wait for 500 us;
-KEY(0)<='0';
-wait for 18 ms; --reaction time of 17ms
-KEY(3)<='1';
-wait for 100 us;
-KEY(3)<='0';
 wait;
 end process;
 
