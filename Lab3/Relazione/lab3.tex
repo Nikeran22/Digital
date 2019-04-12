@@ -12,6 +12,11 @@
 \usepackage{xcolor}
 \usepackage{siunitx}
 \usepackage{physics}
+\usepackage{subcaption}
+
+
+
+
 \setmarginsrb{3 cm}{2 cm}{3 cm}{2 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
 
 \title{Lab 03}													% Title
@@ -120,11 +125,132 @@ The $add_subtract$ input was then assigned to $SW_8$ in the top level entity. In
 The maximum operating frequency of the circuit $f_{max}$ has been determined  as in section 1 and its value is $f_{max}=600MHz$. $f_{max}$ is lower for this circuit because the longest path now includes another level of logic that  is between the output of the register where $B$ is stored and the input of the full adder. \\
 Therefore the longest path is the same as the previous section but it starts only from the previously mentioned register because only between  it and the full adder there are the additional $xor$ gates.\\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{ 16-bit RCA, Carry-Bypass Adder and Carry-Select Adder }
 
-\section{3}
-punto 3
+In this section will be presented three different implementations of 16 bit adders. 
+Each of them will be simulated by means of a testbench, timing analysis will be performed as well. 
+The different adders are tested over the same circuit architecture shown in the next $figure$. The 16-bit adder receives the 2 16-bit addends from 2 registers and sends the summing result to a third register. Finally the result and the addends are decoded into hexadecimal values.
+\newline
+\newline
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.6]{immagini/niki/rtlgeneral.png}
+	\caption{Architecture of the circuit including the general 16-bit adder}       
+	
+\end{figure}
+\newpage
+\subsection{16-bit RCA}
+
+The first implemented architecture is the classical Ripple Carry Adder (RCA).
+As shown in the figure below the carry output of each FA becomes the carry input of the next FA. 
+ \begin{figure}[!h]
+ 	\centering
+ 	\includegraphics[scale = 0.6]{immagini/niki/rtl2_a.png}
+ 	\caption{RCA adder architecture}       
+ \end{figure}
+
+The resulting thestbench is shown in the next image.
+
+ \begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.55]{immagini/niki/testbench1.png}
+	\caption{RCA testbench}       
+\end{figure}
+\newpage
+The quartus timing analysis tool gives the results:
+ \begin{figure}[!h]
+ 	\centering
+ \begin{subfigure}{\linewidth}	
+ 	\centering
+ 		\raisebox{1cm}{\includegraphics[scale = 0.8]{immagini/niki/f2.png}}
+ 	\raisebox{0.4mm}{\includegraphics[scale = 0.7]{immagini/niki/delay2.png}} 	
+ \end{subfigure}
+
+\end{figure}
+
+meaning that the worst-case delay path is $5.814 ns $ long, corresponding to a maximum usable frequency of $172MHz$.
+
+\subsection{16-bit Carry Bypass adder}
+
+The circuit shown below implements a 16-bit carry bypass adder. This architecture creates an alternative path for the carry of each block of full adders. If the output carry equals the input carry then it might be propagated resulting in a faster operation.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.45]{immagini/niki/parte2_rtl.png}
+	\caption{16-bit Carry Bypass Adder}       
+\end{figure}
+
+The control blackbox shown below checks the condition of carry propagation enabling a MUX that select the right carry path.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.2]{immagini/niki/rtl2.png}
+	\caption{control blackbox}       
+\end{figure}
+\newpage
+As before a testbench has been generated validating the design:
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.58]{immagini/niki/testbench2.png}
+	\caption{CBA testebench}       
+\end{figure}
+
+This time quartus timing analysis tool returns the results:
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}{\linewidth}	
+		\centering
+		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f3.png}}
+		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay3.png}} 	
+	\end{subfigure}
+	
+\end{figure}
+
+meaning that the worst-case delay path is $4.568 ns $ long, corresponding to a maximum usable frequency of $218.91MHz$, much higher than the first architecture.
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{16-bit Carry Select Adder}
+
+The circuit shown below implements a 16-bit carry select adder. This time the architecture doubles the number of FAs calculating the possibile results for each possible carry input condition. 
+At the end the true result is generated using a set of MUX that select the 'already calculated' result corresponding to the given carry input. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.4]{immagini/niki/rtl3.png}
+	\caption{16-bit Carry Select adder }       
+\end{figure}
+
+As before a testbench has been generated validating the design:
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.58]{immagini/niki/testbench3.png}
+	\caption{16-bit CSA testebench}       
+\end{figure}
+\newpage
+
+This time quartus timing analysis tool returns the results:
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}{\linewidth}	
+		\centering
+		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f1.png}}
+		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay1.png}} 	
+	\end{subfigure}
+	
+\end{figure}
+
+meaning that the worst-case delay path is $4.417 ns $ long, corresponding to a maximum usable frequency of $226.4MHz$,
+this result is similar to the CBA adder but still the implemented 16-bit CSA returns the fastest results.
+ 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Multiplier}
 
 The task of this part of the experience is design a 4-bit multiplier using VHDL, the circuit implemented is based on the one in $Figure$ $4$. 
