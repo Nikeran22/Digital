@@ -275,9 +275,17 @@ The 4-bit adders are composed of 4 full adders and they do the intermediate addi
 The and arrays perfoms the multiplication of one factor by one bit of the other.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.3]{immagini/RTL_multiplier.jpg}
+	\includegraphics[scale = 0.4]{immagini/RTL_multiplier.jpg}
 	\caption{the RTL schematics of the multiplier component}       
 
 \end{figure}
+\subsection{Testing the circuit}
+The testing of single components was done manually using Modelsim since all of the components were either reused from previous points or trivial. \newline
+A testbench was used for testing the overall circuit, this testbench tests all the possible 256 pairs of inputs.
+Despite the big number of possible pairs reading the test result is practical as the operation of the circuit is just a simple multiplication. \newline
+Inputs were generated procedurally through 2 nested for loops and they were provided with a 8-bit vector that simulated the switches vector.\newline
+The tests of circuit done on the DE10 board confirmed the Modelsim simulations.
+
+
 
 \end{document}
