@@ -77,9 +77,50 @@
 \section{}
 \section{}
 \section{}
-\section{}
+\newpage
+\section{- “HELLO” FSM}
+In this section a circuit that scrolls the word "HELLO" over the display has been implemented.
+The image below shows the architecture of the circuit generated using a VHDL description:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/niki/rtl.PNG}
+	\caption{Implemented architecture}
+\end{figure}
+
+The circuit uses six 7-bit registers connected in a pipeline fashion. Each of them directly drives a 7-segment display. 
+
+The FSM controls the pipeline by inserting the characters (H,E,L,L,O) into the first 7-bit register.
+Every second the letters scroll  from right to left, once the cycle is completed (i.e. The 'O' letter reach the leftmost display) the FSM starts the process again in an infinite loop.
+The state diagram of the implemented FSM is shown below:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.45]{immagini/niki/statemachine.PNG}
+	\caption{State Diagram}
+\end{figure}
+\newpage
+The 6 7-bit resisters have been implemented using a behavioral approach. The testbench shown below has been performed to check their functionalities:
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.55]{immagini/niki/reg.PNG}
+	\caption{7-bit register testbench}
+\end{figure}
+
+Finally a testbench for the entire design has also been implemented, showing the correct behavior of the circuit.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.55]{immagini/niki/disp.PNG}
+	\caption{"HELLO" FSM testbench}
+\end{figure}
+
+Note that to keep the simulation fast enough the letter scrolls every 2 clock cycles.
 
 
-\section{ofc}
+
+
+
+
+
+
 
 \end{document}

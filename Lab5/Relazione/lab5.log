@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  14 APR 2019 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  14 APR 2019 13:31
 entering extended mode
 **./lab5.tex
 (lab5.tex
@@ -566,23 +566,55 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab5.aux) ) 
+g>] [1]
+("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+<immagini/niki/rtl.PNG, id=13, 936.49875pt x 450.55829pt>
+File: immagini/niki/rtl.PNG Graphic file (type png)
+<use immagini/niki/rtl.PNG>
+Package pdftex.def Info: immagini/niki/rtl.PNG  used on input line 87.
+(pdftex.def)             Requested size: 440.15446pt x 211.76242pt.
+
+Overfull \hbox (12.72293pt too wide) in paragraph at lines 87--88
+ [][] 
+ []
+
+<immagini/niki/statemachine.PNG, id=15, 781.41937pt x 272.14172pt>
+File: immagini/niki/statemachine.PNG Graphic file (type png)
+<use immagini/niki/statemachine.PNG>
+Package pdftex.def Info: immagini/niki/statemachine.PNG  used on input line 98.
+
+(pdftex.def)             Requested size: 351.63547pt x 122.46263pt.
+[2 <./immagini/niki/rtl.PNG> <./immagini/niki/statemachine.PNG>]
+<immagini/niki/reg.PNG, id=21, 768.24516pt x 87.70265pt>
+File: immagini/niki/reg.PNG Graphic file (type png)
+<use immagini/niki/reg.PNG>
+Package pdftex.def Info: immagini/niki/reg.PNG  used on input line 105.
+(pdftex.def)             Requested size: 422.53615pt x 48.23659pt.
+<immagini/niki/disp.PNG, id=22, 769.37437pt x 162.9839pt>
+File: immagini/niki/disp.PNG Graphic file (type png)
+<use immagini/niki/disp.PNG>
+Package pdftex.def Info: immagini/niki/disp.PNG  used on input line 112.
+(pdftex.def)             Requested size: 423.15721pt x 89.6414pt.
+ [3 <./immagini/niki/reg.PNG> <./immagini/niki/disp.PNG>] (lab5.aux) ) 
 Here is how much of TeX's memory you used:
- 16655 strings out of 492945
- 317420 string characters out of 3126253
+ 16935 strings out of 492945
+ 320912 string characters out of 3126253
  362968 words of memory out of 3000000
- 20430 multiletter control sequences out of 15000+200000
+ 20701 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab5.pdf (2 pages, 69380 bytes).
+ 40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users
+/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on lab5.pdf (4 pages, 232033 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 41 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
