@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  8 APR 2019 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  15 APR 2019 09:50
 entering extended mode
 **./lab4.tex
 (lab4.tex
@@ -575,33 +575,46 @@ Overfull \hbox (29.4539pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-[3 <./immagini/testbench2.PNG>]
-Overfull \hbox (6.93932pt too wide) in paragraph at lines 148--151
+<immagini/RTB3.jpg, id=31, 771.63281pt x 205.5178pt>
+File: immagini/RTB3.jpg Graphic file (type jpg)
+<use immagini/RTB3.jpg>
+Package pdftex.def Info: immagini/RTB3.jpg  used on input line 140.
+(pdftex.def)             Requested size: 462.98326pt x 123.31163pt.
+
+Overfull \hbox (35.55173pt too wide) in paragraph at lines 140--141
+ [][] 
+ []
+
+[3 <./immagini/testbench2.PNG> <./immagini/RTB3.jpg>]
+("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+Overfull \hbox (12.37099pt too wide) in paragraph at lines 155--158
 \OML/cmm/m/it/12 MEM\OT1/cmr/m/n/12 0$ el-e-ment is re-spon-si-ble to gen-er-at
-e the en-able sig-nal for the $\OML/cmm/m/it/12 counter[]omparator$
+e the en-able sig-nal for the $\OML/cmm/m/it/12 counter[]comparator$
  []
 
 
-Overfull \hbox (23.93962pt too wide) in paragraph at lines 148--151
+Overfull \hbox (23.93962pt too wide) in paragraph at lines 155--158
 \OT1/cmr/m/n/12 when oc-curs pulse of $\OML/cmm/m/it/12 KEY[]$\OT1/cmr/m/n/12 .
  The $\OML/cmm/m/it/12 KEY[]$ \OT1/cmr/m/n/12 in-put is con-nected also to the 
 $\OML/cmm/m/it/12 Asynchronous[]lear$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--164
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
 
  []
 
-[4] (lab4.aux) ) 
+[5] (lab4.aux) ) 
 Here is how much of TeX's memory you used:
- 16701 strings out of 492946
- 315621 string characters out of 3135629
- 366131 words of memory out of 3000000
- 20468 multiletter control sequences out of 15000+200000
+ 17201 strings out of 492946
+ 320832 string characters out of 3135629
+ 367131 words of memory out of 3000000
+ 20964 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,11n,63p,814b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
@@ -610,9 +623,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb>
-Output written on lab4.pdf (5 pages, 398487 bytes).
+Output written on lab4.pdf (6 pages, 471595 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
