@@ -25,6 +25,7 @@ output <= 	"1000000" when (input="0000") else --0
 				"1000110" when (input="1100") else --C
 				"0100001" when (input="1101") else --D
 				"0000110" when (input="1110") else --E
-				"0001110" when (input="1111"); --F
+				"0001110" when (input="1111") else --F
+				"1111111";
 				
 end Behavioral;

@@ -22,7 +22,7 @@ signal A,B : signed (3 downto 0);
 signal SW : signed (8 downto 0);
 signal HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : std_logic_vector(6 downto 0);
 signal overflow : std_logic_vector(9 downto 9);
-signal changheSW,add_subtract : std_logic;
+signal changheSW,add_subtract,stop_reset : std_logic;
 begin
 -- Unit Under Test port map
 UUT : lab3_es2
@@ -38,21 +38,47 @@ HEX5 => HEX5,
 LEDR => overflow
 );
 
-clock: Process(CK) -- clock generation
+clock: Process(CK(1)) -- clock generation
 begin
 if (CK(1)='U') then
-CK<="00";
+CK(1)<='0';
 else
 CK(1)<=not(CK(1)) after 10 ps;
 end if;
 end process;
+
+stop_reset_signal: Process --generate signal to interrupt reset signal generation
+begin
+stop_reset<='0';
+wait for 1000 ps;
+stop_reset<='1';
+wait;
+end process;
+
+
+resetgen: Process(CK(0)) --reset
+begin
+if (CK(0)='U') then
+CK(0)<='0';
+else if (stop_reset='0') then
+if(CK(0)='0') then
+CK(0)<='1' after 10 ps;
+else if (CK(0)='1') then
+CK(0)<='0' after 105 ps;
+end if;
+end if;
+else CK(0)<='0';
+end if;
+end if;
+end process;
+
 
 clock1: Process(changheSW) -- clock generation for counter
 begin
 if (changheSW='U') then
 changheSW<='0';
 else
-changheSW<=not(changheSW) after 100 ps;
+changheSW<=not(changheSW) after 90 ps;
 end if;
 end process;
 

@@ -112,8 +112,10 @@ To test every possible combination of inputs it has been used a 8-bit counter wh
 Since the the values of $A,B$ and $S$ coded for the 7-segments display are the output of the circuit in the testbench are present several if clauses that  translate the output values to the 2's complement binary value of $A,B$ and $S$.\\
 \\
 \subsection{Timing analysis}
-The maximum operating frequency of the circuit $f_{max}$ has been determined with the help of Quartus Prime and TimeQuest and is $f_{max}=650MHz$.\\
-The longest path in the circuit in terms of delay is the one that starts from the MSB of a register where $A$ or $B$ are stored and arrives to the Flip Flop that stores the overflow signal. This path is longer than the other possible path that starts from one of the previous registers and arrives to the register where $S$ is stored, because the overflow signal is calculated by a $xor$ gate whose inputs are the $carry_{out}$ signals of the last two full adders. Therefore, with respect to the MSB of $S$, which goes directly to the register, the signal has to be processed by the $xor$ gate before arriving to the flip flop.
+The maximum operating frequency of the circuit $f_{max}$ has been determined with the help of Quartus Prime and TimeQuest and is $f_{max}=627.35MHz$.\\
+The longest path in the circuit in terms of delay is the one that starts from the MSB of a register where $A$ or $B$ are stored and arrives to the Flip Flop that stores the overflow signal. This path is longer than the other possible path that starts from one of the previous registers and arrives to the register where $S$ is stored, because the overflow signal is calculated by a $xor$ gate whose inputs are the $carry_{out}$ signals of the last two full adders. Therefore, with respect to the MSB of $S$, which goes directly to the register, the signal has to be processed by the $xor$ gate before arriving to the flip flop.\\
+Quartus Prime reports another path: it starts from the bit in position $0$ of the $B$ register and ends to the bit in position $3$ of the $S$ register. This difference could be due to the internal structure of the FPGA.
+
 
 
 \section{4-bit Sequential Adder/Subtractor}
@@ -122,8 +124,9 @@ The circuit implemented in this section is a little modification of the circuit 
 \subsection{Testbench}
 The $add_subtract$ input was then assigned to $SW_8$ in the top level entity. In the testbench the counter has been modified now being 9-bit wide and its MSB is assigned to $add_subtract$.\\ 
 \subsection{Timing analysis}
-The maximum operating frequency of the circuit $f_{max}$ has been determined  as in section 1 and its value is $f_{max}=600MHz$. $f_{max}$ is lower for this circuit because the longest path now includes another level of logic that  is between the output of the register where $B$ is stored and the input of the full adder. \\
+The maximum operating frequency of the circuit $f_{max}$ has been determined  as in section 1 and its value is $f_{max}=603.86MHz$. $f_{max}$ is lower for this circuit because the longest path now includes another level of logic that  is between the output of the register where $B$ is stored and the input of the full adder. \\
 Therefore the longest path is the same as the previous section but it starts only from the previously mentioned register because only between  it and the full adder there are the additional $xor$ gates.\\
+Quartus Prime reports another path: it starts from the bit in position $0$ of the $B$ register and ends to the bit in position $2$ of the $S$ register. This difference could be due to the internal structure of the FPGA.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
