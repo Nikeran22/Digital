@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  11 APR 2019 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  16 APR 2019 17:38
 entering extended mode
 **./lab3.tex
 (lab3.tex
@@ -677,16 +677,16 @@ Overfull \hbox (7.73306pt too wide) in paragraph at lines 159--160
  []
 
 [6 <./immagini/niki/rtl2_a.png> <./immagini/niki/testbench1.png>]
-<immagini/niki/f2.png, id=44, 221.70328pt x 38.01703pt>
-File: immagini/niki/f2.png Graphic file (type png)
-<use immagini/niki/f2.png>
-Package pdftex.def Info: immagini/niki/f2.png  used on input line 168.
-(pdftex.def)             Requested size: 177.36285pt x 30.41365pt.
-<immagini/niki/delay2.png, id=45, 215.68079pt x 149.05687pt>
-File: immagini/niki/delay2.png Graphic file (type png)
-<use immagini/niki/delay2.png>
-Package pdftex.def Info: immagini/niki/delay2.png  used on input line 169.
-(pdftex.def)             Requested size: 150.97551pt x 104.3391pt.
+<immagini/niki/f1.png, id=44, 221.70328pt x 42.1575pt>
+File: immagini/niki/f1.png Graphic file (type png)
+<use immagini/niki/f1.png>
+Package pdftex.def Info: immagini/niki/f1.png  used on input line 168.
+(pdftex.def)             Requested size: 177.36285pt x 33.72603pt.
+<immagini/niki/delay1.png, id=45, 207.77625pt x 126.8489pt>
+File: immagini/niki/delay1.png Graphic file (type png)
+<use immagini/niki/delay1.png>
+Package pdftex.def Info: immagini/niki/delay1.png  used on input line 169.
+(pdftex.def)             Requested size: 145.44237pt x 88.79361pt.
 <immagini/niki/parte2_rtl.png, id=46, 986.56078pt x 187.45032pt>
 File: immagini/niki/parte2_rtl.png Graphic file (type png)
 <use immagini/niki/parte2_rtl.png>
@@ -702,7 +702,7 @@ File: immagini/niki/rtl2.png Graphic file (type png)
 <use immagini/niki/rtl2.png>
 Package pdftex.def Info: immagini/niki/rtl2.png  used on input line 189.
 (pdftex.def)             Requested size: 135.57912pt x 97.71333pt.
-[7 <./immagini/niki/f2.png> <./immagini/niki/delay2.png> <./immagini/niki/parte
+[7 <./immagini/niki/f1.png> <./immagini/niki/delay1.png> <./immagini/niki/parte
 2_rtl.png> <./immagini/niki/rtl2.png>]
 <immagini/niki/testbench2.png, id=55, 758.45859pt x 159.21985pt>
 File: immagini/niki/testbench2.png Graphic file (type png)
@@ -714,18 +714,18 @@ Overfull \hbox (12.47475pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
-<immagini/niki/f3.png, id=56, 222.07968pt x 36.51141pt>
-File: immagini/niki/f3.png Graphic file (type png)
-<use immagini/niki/f3.png>
-Package pdftex.def Info: immagini/niki/f3.png  used on input line 206.
-(pdftex.def)             Requested size: 199.86986pt x 32.85994pt.
-<immagini/niki/delay3.png, id=57, 186.32109pt x 143.78719pt>
-File: immagini/niki/delay3.png Graphic file (type png)
-<use immagini/niki/delay3.png>
-Package pdftex.def Info: immagini/niki/delay3.png  used on input line 207.
-(pdftex.def)             Requested size: 149.05707pt x 115.02989pt.
-[8 <./immagini/niki/testbench2.png> <./immagini/niki/f3.png> <./immagini/niki/d
-elay3.png>]
+<immagini/niki/f2.png, id=56, 221.70328pt x 38.01703pt>
+File: immagini/niki/f2.png Graphic file (type png)
+<use immagini/niki/f2.png>
+Package pdftex.def Info: immagini/niki/f2.png  used on input line 206.
+(pdftex.def)             Requested size: 199.5311pt x 34.215pt.
+<immagini/niki/delay2.png, id=57, 215.68079pt x 149.05687pt>
+File: immagini/niki/delay2.png Graphic file (type png)
+<use immagini/niki/delay2.png>
+Package pdftex.def Info: immagini/niki/delay2.png  used on input line 207.
+(pdftex.def)             Requested size: 172.54485pt x 119.24565pt.
+[8 <./immagini/niki/testbench2.png> <./immagini/niki/f2.png> <./immagini/niki/d
+elay2.png>]
 <immagini/niki/rtl3.png, id=64, 989.94844pt x 470.88422pt>
 File: immagini/niki/rtl3.png Graphic file (type png)
 <use immagini/niki/rtl3.png>
@@ -742,34 +742,34 @@ Overfull \hbox (20.55243pt too wide) in paragraph at lines 230--231
  []
 
 [9 <./immagini/niki/rtl3.png> <./immagini/niki/testbench3.png>]
-<immagini/niki/f1.png, id=71, 221.70328pt x 42.1575pt>
-File: immagini/niki/f1.png Graphic file (type png)
-<use immagini/niki/f1.png>
-Package pdftex.def Info: immagini/niki/f1.png  used on input line 240.
-(pdftex.def)             Requested size: 199.5311pt x 37.94138pt.
-<immagini/niki/delay1.png, id=72, 207.77625pt x 126.8489pt>
-File: immagini/niki/delay1.png Graphic file (type png)
-<use immagini/niki/delay1.png>
-Package pdftex.def Info: immagini/niki/delay1.png  used on input line 241.
-(pdftex.def)             Requested size: 166.2212pt x 101.47925pt.
- [10 <./immagini/niki/f1.png> <./immagini/niki/delay1.png>]
+<immagini/niki/f3.png, id=71, 222.07968pt x 36.51141pt>
+File: immagini/niki/f3.png Graphic file (type png)
+<use immagini/niki/f3.png>
+Package pdftex.def Info: immagini/niki/f3.png  used on input line 240.
+(pdftex.def)             Requested size: 199.86986pt x 32.85994pt.
+<immagini/niki/delay3.png, id=72, 186.32109pt x 143.78719pt>
+File: immagini/niki/delay3.png Graphic file (type png)
+<use immagini/niki/delay3.png>
+Package pdftex.def Info: immagini/niki/delay3.png  used on input line 241.
+(pdftex.def)             Requested size: 149.05707pt x 115.02989pt.
+ [10 <./immagini/niki/f3.png> <./immagini/niki/delay3.png>]
 <immagini/multiplier-circuit.jpg, id=78, 428.802pt x 395.076pt>
 File: immagini/multiplier-circuit.jpg Graphic file (type jpg)
 <use immagini/multiplier-circuit.jpg>
-Package pdftex.def Info: immagini/multiplier-circuit.jpg  used on input line 25
-9.
+Package pdftex.def Info: immagini/multiplier-circuit.jpg  used on input line 26
+1.
 (pdftex.def)             Requested size: 171.51776pt x 158.02759pt.
 <immagini/RTL_architecture_4.jpg, id=79, 591.4095pt x 271.0125pt>
 File: immagini/RTL_architecture_4.jpg Graphic file (type jpg)
 <use immagini/RTL_architecture_4.jpg>
-Package pdftex.def Info: immagini/RTL_architecture_4.jpg  used on input line 26
-8.
+Package pdftex.def Info: immagini/RTL_architecture_4.jpg  used on input line 27
+0.
 (pdftex.def)             Requested size: 295.70403pt x 135.5059pt.
 <immagini/RTL_multiplier.jpg, id=80, 977.45175pt x 254.1495pt>
 File: immagini/RTL_multiplier.jpg Graphic file (type jpg)
 <use immagini/RTL_multiplier.jpg>
-Package pdftex.def Info: immagini/RTL_multiplier.jpg  used on input line 278.
-(pdftex.def)             Requested size: 293.2378pt x 76.24544pt.
+Package pdftex.def Info: immagini/RTL_multiplier.jpg  used on input line 280.
+(pdftex.def)             Requested size: 390.97377pt x 101.65799pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -796,7 +796,7 @@ ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nikil/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
 s/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on lab3.pdf (13 pages, 1029934 bytes).
+Output written on lab3.pdf (13 pages, 1030921 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

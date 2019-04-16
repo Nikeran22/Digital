@@ -165,13 +165,13 @@ The quartus timing analysis tool gives the results:
  	\centering
  \begin{subfigure}{\linewidth}	
  	\centering
- 		\raisebox{1cm}{\includegraphics[scale = 0.8]{immagini/niki/f2.png}}
- 	\raisebox{0.4mm}{\includegraphics[scale = 0.7]{immagini/niki/delay2.png}} 	
+ 		\raisebox{1cm}{\includegraphics[scale = 0.8]{immagini/niki/f1.png}}
+ 	\raisebox{0.4mm}{\includegraphics[scale = 0.7]{immagini/niki/delay1.png}} 	
  \end{subfigure}
 
 \end{figure}
 
-meaning that the worst-case delay path is $5.814 ns $ long, corresponding to a maximum usable frequency of $172MHz$.
+meaning that the worst-case delay path is $4.417 ns $ long, corresponding to a maximum usable frequency of $226.4MHz$.
 
 \subsection{16-bit Carry Bypass adder}
 
@@ -203,13 +203,13 @@ This time quartus timing analysis tool returns the results:
 	\centering
 	\begin{subfigure}{\linewidth}	
 		\centering
-		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f3.png}}
-		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay3.png}} 	
+		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f2.png}}
+		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay2.png}} 	
 	\end{subfigure}
 	
 \end{figure}
 
-meaning that the worst-case delay path is $4.568 ns $ long, corresponding to a maximum usable frequency of $218.91MHz$, much higher than the first architecture.
+meaning that the worst-case delay path is $5.814 ns $ long, corresponding to a maximum usable frequency of $172MHz$, much lower than the first architecture.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
@@ -237,14 +237,16 @@ This time quartus timing analysis tool returns the results:
 	\centering
 	\begin{subfigure}{\linewidth}	
 		\centering
-		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f1.png}}
-		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay1.png}} 	
+		\raisebox{1cm}{\includegraphics[scale = 0.9]{immagini/niki/f3.png}}
+		\raisebox{0.4mm}{\includegraphics[scale = 0.8]{immagini/niki/delay3.png}} 	
 	\end{subfigure}
 	
 \end{figure}
 
-meaning that the worst-case delay path is $4.417 ns $ long, corresponding to a maximum usable frequency of $226.4MHz$,
-this result is similar to the CBA adder but still the implemented 16-bit CSA returns the fastest results.
+meaning that the worst-case delay path is $4.568 ns $ long, corresponding to a maximum usable frequency of $218.91MHz$,
+this result is similar to the CBA adder but still the implemented 16-bit CBA returns the fastest results.
+
+Notice that these results are not what we would expect from a custom designed silicon chip. FPGAs introduce unwanted lags due to parasitic capacitance of its internal architecture.
  
 
 
