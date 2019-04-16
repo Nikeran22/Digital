@@ -15,7 +15,7 @@ END COMPONENT;
 
 
 SIGNAL SW :  STD_LOGIC_VECTOR(1 DOWNTO 0);
-SIGNAL CLOCK,led :  STD_LOGIC;
+SIGNAL CLOCK,led,Resetn,Input :  STD_LOGIC;
 
 
 begin
@@ -25,6 +25,9 @@ port map(
 SW => SW,
 KEY(0) => CLOCK,
 LEDR(0) => led);
+
+Resetn<=SW(0);
+Input<=SW(1);
 
 ck: Process(CLOCK) -- clock generation 
 begin
@@ -38,12 +41,14 @@ end process;
 test: Process
 begin
 SW<="00"; --reset
-wait for 50 ns;
+wait for 20 ns;
 SW<="01";
 wait for 70 ns;
 SW<="11";
 wait for 70 ns;
 SW<="00"; --reset
+wait for 20 ns;
+SW<="01";
 wait for 70 ns;
 wait;
 end process;
