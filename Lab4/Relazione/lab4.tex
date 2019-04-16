@@ -91,13 +91,13 @@ Once coded into VHDL the Quartus Prime compiler uses separate memory components 
 	\caption{Quartus circuit implementation}
 \end{figure}
 \vspace{5mm}
+\newpage
 Finally, a testbench has been written to test the behavior of the circuit, according to the table shown below:
 \vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.6]{immagini/table_sr.PNG}		
 \end{figure}
-\newpage
 
 
 \begin{figure}[h]
@@ -108,9 +108,13 @@ Finally, a testbench has been written to test the behavior of the circuit, accor
 The testbench results are shown by means of the simulated waves shown in $figure\;3$. 
 Initially $CLK=1$, the lath is enabled. For $S=1$, $R=0$ the set condition is triggered and $Q=1$. Viceversa $Q=0$ when $S=0$, $R=1$, in reset condition. Once $CLK=0$ the latch is disabled entering in the memory condition as $S=0$, $R=0$. In the other hand for $S=1$, $R=1$ the latch behavior becomes unpredictable.
 \vspace{10mm}
+\newpage
 \section{16-bit synchronous counter}
 
-The circuit in $figure\;4$ implements a 4-bit counter using T flip flops. A 16-bit version has been implemented using the same structure. Using the Quartus tools the maximum working frequency has been identified to be equal to $F=374.53MHz$ as reported in $figure\;5$ using a total of $31$ LEs.
+The circuit in $figure\;4$ implements a 4-bit counter using T flip flops. A 16-bit version has been implemented using the same structure as shown in figure 5. Using the Quartus tools the maximum working frequency has been identified to be equal to $F=374.53MHz$ as reported in $figure\;5$ using a total of $31$ LEs.
+
+ In the implementation of the 16-bits counter respect to the 4-bit counter no differences as observed in terms of architecture.
+
 
 
 
@@ -120,6 +124,12 @@ The circuit in $figure\;4$ implements a 4-bit counter using T flip flops. A 16-b
 	\includegraphics[scale = 0.8]{immagini/count.PNG}
 	\caption{4-bit counter}
 \end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.4]{immagini/immagine42.PNG}
+	\caption{4-bit counter}
+\end{figure}
 \vspace{10mm}
 	\begin{figure}[h]
 		\centering
@@ -127,7 +137,7 @@ The circuit in $figure\;4$ implements a 4-bit counter using T flip flops. A 16-b
 		\caption{Maximum working frequency}
 	\end{figure}
 \newpage
-Finally a testbench had been designed to check the functionality of the circuit, the results are shown in $figure\;6$ where the counting process is shown using the HEX display. Notice that the circuit is firstly initialized resetting the current state of every FF. Then the counting process has been started enabling the circuit and applying a clock to every FF.
+Finally a testbench has been designed to check the functionality of the circuit, the results are shown in $figure\;6$ where the counting process is shown using the HEX display. Notice that the circuit is firstly initialized resetting the current state of every FF. Then the counting process has been started enabling the circuit and applying a clock to every FF.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[scale = 0.6]{immagini/testbench2.PNG}
