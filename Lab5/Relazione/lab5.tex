@@ -16,7 +16,7 @@
 
 \title{Lab 05}													% Title
 \author{G 03}														% Author
-\date{x x 2019}														% Date
+\date{16 apr 2019}														% Date
 
 \makeatletter
 \let\thetitle\@title
@@ -86,14 +86,21 @@ The FSM from the STG diagram given in $figure$ $1$ was implemented using a One-H
 	\includegraphics[scale = 0.7]{immagini/Berchialla/Code1.jpg}
 	\caption{One-Hot code}
 \end{figure}
-\\The correct behavior of the circuit has been verified by means of a testbench. The result of the simulation are shown in $figure$ $4$.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.7]{immagini/Berchialla/TB1.jpg}
-	\caption{One-Hot code}
+	\includegraphics[scale = 0.55]{immagini/Berchialla/RT1.jpg}
+	\caption{RTL View}
+\end{figure}
+
+
+The correct behavior of the circuit has been verified by means of a testbench. The result of the simulation are shown in $figure$ $4$.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.65]{immagini/Berchialla/TB1.jpg}
+	\caption{Testbench waveforms}
 \end{figure}
 \\
-
+\newpage
 \section{Modified One-Hot FSM}
 In this section we had to implement the same FSM of the previous section, but with another One-Hot code shown in $figure$ $5$. The value of this state encoding is that the reset state is coded as $000000000$. This excludes the need of a set port for the Flip Flops in the circuit that now have only a reset port.\\
 The Circuit that implements this FSM with this state encoding is shown in $figure$ $6$ and is very similar to the one of the previous section. An inverter at the output of the $y0$ Flip Flop was added while all the other connections are unchanged.

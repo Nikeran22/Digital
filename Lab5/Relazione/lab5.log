@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  15 APR 2019 11:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  19 APR 2019 19:58
 entering extended mode
 **./lab5.tex
 (lab5.tex
@@ -537,68 +537,82 @@ File: immagini/Berchialla/Code1.jpg Graphic file (type jpg)
 <use immagini/Berchialla/Code1.jpg>
 Package pdftex.def Info: immagini/Berchialla/Code1.jpg  used on input line 86.
 (pdftex.def)             Requested size: 159.9339pt x 142.28058pt.
-<immagini/Berchialla/TB1.jpg, id=12, 720.06516pt x 93.72516pt>
-File: immagini/Berchialla/TB1.jpg Graphic file (type jpg)
-<use immagini/Berchialla/TB1.jpg>
-Package pdftex.def Info: immagini/Berchialla/TB1.jpg  used on input line 92.
-(pdftex.def)             Requested size: 504.04218pt x 65.60715pt.
+<immagini/Berchialla/RT1.jpg, id=12, 794.97pt x 128.94173pt>
+File: immagini/Berchialla/RT1.jpg Graphic file (type jpg)
+<use immagini/Berchialla/RT1.jpg>
+Package pdftex.def Info: immagini/Berchialla/RT1.jpg  used on input line 91.
+(pdftex.def)             Requested size: 437.23485pt x 70.91815pt.
 
-Overfull \hbox (76.61064pt too wide) in paragraph at lines 92--93
+Overfull \hbox (9.80331pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--96
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<immagini/Berchialla/TB1.jpg, id=13, 720.06516pt x 93.72516pt>
+File: immagini/Berchialla/TB1.jpg Graphic file (type jpg)
+<use immagini/Berchialla/TB1.jpg>
+Package pdftex.def Info: immagini/Berchialla/TB1.jpg  used on input line 99.
+(pdftex.def)             Requested size: 468.0368pt x 60.92061pt.
+
+Overfull \hbox (40.60527pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/Berchialla/Code2.jpg, id=13, 303.75984pt x 295.47891pt>
+[1 <./immagini/Berchialla/STG.jpg> <./immagini/Berchialla/Code1.jpg>]
+<immagini/Berchialla/Code2.jpg, id=18, 303.75984pt x 295.47891pt>
 File: immagini/Berchialla/Code2.jpg Graphic file (type jpg)
 <use immagini/Berchialla/Code2.jpg>
-Package pdftex.def Info: immagini/Berchialla/Code2.jpg  used on input line 102.
+Package pdftex.def Info: immagini/Berchialla/Code2.jpg  used on input line 109.
 
 (pdftex.def)             Requested size: 212.63042pt x 206.83382pt.
-[1 <./immagini/Berchialla/STG.jpg> <./immagini/Berchialla/Code1.jpg>] [2 <./imm
-agini/Berchialla/TB1.jpg> <./immagini/Berchialla/Code2.jpg>]
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
+ [2 <./immagini/Berchialla/RT1.jpg> <./immagini/Berchialla/TB1.jpg> <./immagini
+/Berchialla/Code2.jpg>] [3] ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.
+def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-<immagini/niki/rtl.PNG, id=21, 936.49875pt x 450.55829pt>
+<immagini/niki/rtl.PNG, id=25, 936.49875pt x 450.55829pt>
 File: immagini/niki/rtl.PNG Graphic file (type png)
 <use immagini/niki/rtl.PNG>
-Package pdftex.def Info: immagini/niki/rtl.PNG  used on input line 113.
+Package pdftex.def Info: immagini/niki/rtl.PNG  used on input line 120.
 (pdftex.def)             Requested size: 440.15446pt x 211.76242pt.
 
-Overfull \hbox (12.72293pt too wide) in paragraph at lines 113--114
+Overfull \hbox (12.72293pt too wide) in paragraph at lines 120--121
  [][] 
  []
 
-<immagini/niki/statemachine.PNG, id=23, 781.41937pt x 272.14172pt>
+<immagini/niki/statemachine.PNG, id=27, 781.41937pt x 272.14172pt>
 File: immagini/niki/statemachine.PNG Graphic file (type png)
 <use immagini/niki/statemachine.PNG>
-Package pdftex.def Info: immagini/niki/statemachine.PNG  used on input line 124
+Package pdftex.def Info: immagini/niki/statemachine.PNG  used on input line 131
 .
 (pdftex.def)             Requested size: 351.63547pt x 122.46263pt.
-[3 <./immagini/niki/rtl.PNG> <./immagini/niki/statemachine.PNG>]
-<immagini/niki/reg.PNG, id=29, 768.24516pt x 87.70265pt>
+[4 <./immagini/niki/rtl.PNG> <./immagini/niki/statemachine.PNG>]
+<immagini/niki/reg.PNG, id=33, 768.24516pt x 87.70265pt>
 File: immagini/niki/reg.PNG Graphic file (type png)
 <use immagini/niki/reg.PNG>
-Package pdftex.def Info: immagini/niki/reg.PNG  used on input line 131.
+Package pdftex.def Info: immagini/niki/reg.PNG  used on input line 138.
 (pdftex.def)             Requested size: 422.53615pt x 48.23659pt.
-<immagini/niki/disp.PNG, id=30, 769.37437pt x 162.9839pt>
+<immagini/niki/disp.PNG, id=34, 769.37437pt x 162.9839pt>
 File: immagini/niki/disp.PNG Graphic file (type png)
 <use immagini/niki/disp.PNG>
-Package pdftex.def Info: immagini/niki/disp.PNG  used on input line 138.
+Package pdftex.def Info: immagini/niki/disp.PNG  used on input line 145.
 (pdftex.def)             Requested size: 423.15721pt x 89.6414pt.
- [4 <./immagini/niki/reg.PNG> <./immagini/niki/disp.PNG>] (lab5.aux) ) 
+ [5 <./immagini/niki/reg.PNG> <./immagini/niki/disp.PNG>] (lab5.aux) ) 
 Here is how much of TeX's memory you used:
- 16964 strings out of 492946
- 318839 string characters out of 3135629
- 364129 words of memory out of 3000000
- 20725 multiletter control sequences out of 15000+200000
+ 16969 strings out of 492946
+ 318973 string characters out of 3135629
+ 363132 words of memory out of 3000000
+ 20729 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -608,9 +622,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr12.pfb>
-Output written on lab5.pdf (5 pages, 462168 bytes).
+Output written on lab5.pdf (6 pages, 1614184 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
