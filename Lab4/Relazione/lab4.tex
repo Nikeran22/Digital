@@ -144,7 +144,7 @@ Finally a testbench has been designed to check the functionality of the circuit,
 			\caption{Modelsim Testbench waves}
 \end{figure}
 \section{16-bit synchronous counter version 2}
-9LEs
+In this section the counter has been implemented by means of a process using the statement $Q<=Q+1;$, therefore giving the synthesis tool maximum freedom on the implementation. As we can see from the RTL view in figure $8$ the tool instantiated 16 D-FFs as memory elements and two sets of multiplexers and an adder to implement the counting behavior and the Enable/Clear functions. This implementation different from the one in the previous section. Here the tool instantiated just D-FFs,Multiplexers and one adder. Those are all elements which are standard elements for an FPGA. Actually, adders and D-FFs have a special places where they are allocated and in an FPGA all logic functions are mapped in Multiplexers. This implementations uses just 9 logic elements and can work up to $xxxxMHz$ instead the previous one uses 31LEs and has $f_{max}=374.53MHz$.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.6]{immagini/RTB3.jpg}
@@ -153,22 +153,40 @@ Finally a testbench has been designed to check the functionality of the circuit,
 
 \section{Flashing digits from 0 to 9}
 \section{Reaction Timer}
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.6]{immagini/RT5.jpg}
+\caption{RTL view}
+\end{figure}
 The RT level circuit to implement the reaction timer is shown in $figure x$. Some non standard components are just the implementation of more standard elements in a single component. This was done in order to accelerate the vhdl description of the circuit and simplify the block scheme.
 \subsection{millisecond counter}
 The purpose of this block is to generate a pulse on the output port connected to $millisecond_signal$ lasting for a clock cycle every millisecond. It has been implemented as a counter that resets and produces a pulse when it reaches the binary equivalent of $50000$. With the DE1 $CLOCK\_50$ clock input at frequency $50MHz$ the circuit counts to $50000$ in $1ms$.
 \subsection{counter comparator}
 This unit starts to count after it is resetted. Its enable signal is in $and$ with the $millisecond_signal$ to enable the counter only every ms and not every clock cycle. \\When the counter reaches the value set by the inputs $SW_{7-0}$ it stops and the $enable_out$ output is asserted to $1$ until the component is reset.
 \subsection{BCD 4digits counter}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.6]{immagini/RTBCD.jpg}
+	\caption{RTL view}
+\end{figure}
+
 This component is made by four $BCDcounters$ connected in a way that they count, modulus 10, numbers up to four digits. Each digit is represented binary using the $BCD$ code and is connected to a decoder driving its respective 7-segments display. \\
-As shown in $figure xx$ each $BCDcounter$ has an input $enable$ and output $enable_out$, those signals are connected together between consecutive $BCDcounters$. In particular the $enable_out$ output is asserted to 1 when the digit displayed is $9$ in order to enable the following counter in the next period and properly display the number. The period for the counter is set to $1ms$ by taking the $and$ of each enable input with the $millisecond_signal$.
-\subsection{Gated SR latches(non lo sono più,modificare) and connections between blocks}
+As shown in $figure xx$ each $BCDcounter$ has an input $enable$ and output $enable\_out$, those signals are connected together between consecutive $BCDcounters$. In particular the $enable_out$ output is asserted to 1 when the digit displayed is $9$ in order to enable the following counter in the next period and properly display the number. The period for the counter is set to $1ms$ by the input $millisecond$ which is directly connected to the $Enable$ signal of the  $BCD$ $4$ $digits$ $counter$.
+\subsection{JK-FFs and connections between blocks}
 Two memory elements have been used to implement the requested behavior. 
-The $MEM0$ element is responsible to generate the enable signal for the $counter\_comparator$ when occurs pulse of $KEY_0$. The $KEY_0$ input is connected also to the $Asynchronous_clear$ input of the $counter_comparator$ in order to start to count from $0$ when $KEY_0$ is pressed.
-\\The $MEM1$ generate a signal useful to stop the $BCD_4digits_counter$ to count and turn off the $LEDR_0$. when $KEY_3$ is pressed. In particular the $LEDR_0$ is active from when the time set by the $SW_{7-0}$ is eplaced (thanks $counter_comparator$) and up to when $KEY_3$ is pressed and the complemented output of $MEM1$ is $0$. The $BCD_4digits_counter$ is active in the same amount of time, but since it has to count every millisecond its enable is in $and$ with the $millisecond_signal$.
+The $MEM0$ element is responsible to generate the enable signal for the $counter\_comparator$ when occurs pulse of $KEY_0$. The $KEY_0$ input is connected also to the $Asynchronous\_clear$ input of the $counter\_comparator$ in order to start to count from $0$ when $KEY_0$ is pressed.
+\\The $MEM1$ generate a signal useful to stop the $BCD_4digits\_counter$ to count and turn off the $LEDR_0$. when $KEY_3$ is pressed. In particular the $LEDR_0$ is active from when the time set by the $SW_{7-0}$ is eplaced (thanks $counter\_comparator$) and up to when $KEY_3$ is pressed and the complemented output of $MEM1$ is $0$. The $BCD_4digits_counter$ is active in the same amount of time, but since it has to count every millisecond its enable is in $and$ with the $millisecond\_signal$.
 \subsection{Testbench}
-To be able to verify easily the behaviour of the circuit a new version:"LAB4\_ES5\_tt has been created. This version does not include the 7-segments decoder, therefore the output is directly taken from the $BCD_4digits_counter$. \\
-As first thing a clock signal with frequency $f=50MHz$ was generated. 
-Then two reaction time measurements cycles are executed with the following parameters:
+To be able to verify easily the behaviour of the circuit a new version:"LAB4\_ES5\_tt has been created. This version does not include the 7-segments decoder, therefore the output is directly taken from the $BCD\_4digits\_counter$. The $Millisecond\_counter\_tt$ only counts up to $3$ instead of $50000$ and the clock period has been set to $20ps$\\
+Then one measurement cycle is executed with the following timing  in order to ensure that both counters reach their respective maximum value.
+
+	\begin{tabular}{lll}
+	Cycle & Waiting time & Reaction time \\
+	& 2550ps          & 1025600ps                  
+\end{tabular}
+
+
+In another file: $testbench\_LAB4\_ES5\_tt$ a proper simulation with the real timings has been done. There the following measurement cycles are executed:
 
 	\begin{tabular}{lll}
 		Cycle & Waiting time & Reaction time \\
@@ -176,6 +194,6 @@ Then two reaction time measurements cycles are executed with the following param
 		& 1ms          & 21ms         
 	\end{tabular}
 \\
-\\
+
 Relatively short duration have been chosen in order to make the simulation faster.
 \end{document}
