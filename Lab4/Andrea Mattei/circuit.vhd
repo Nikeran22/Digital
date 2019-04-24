@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity circuit is
     port(CLOCK_50:in std_logic;
-	      KEY:in std_logic_vector(3 downto 0);
+	      KEY:in std_logic_vector(0 downto 0);
          HEX0:out std_logic_vector(6 downto 0));
 end circuit;
 
@@ -23,9 +23,9 @@ architecture circuit_behaviour of circuit is
 				overflow: out std_logic);
     end component;
 
-    component decoder7HEX is
-        port(a : in std_logic_vector(3 downto 0);  
-		     Display : out std_logic_vector(6 downto 0)); 
+    component decoderHEX16bit is
+        port(input : in std_logic_vector(3 downto 0);  
+		     output : out std_logic_vector(6 downto 0)); 
 		
     end component;    
     
@@ -34,7 +34,7 @@ architecture circuit_behaviour of circuit is
 
 begin
     digit_c:digit_counter port map(clock_50,add,KEY(0),bcd_output);
-    decoder:decoder7HEX port map(bcd_output,HEX0);
+    decoder:decoderHEX16bit port map(bcd_output,HEX0);
     seconds_c:seconds_counter port map(clock_50,KEY(0),add);
 
 end circuit_behaviour;
