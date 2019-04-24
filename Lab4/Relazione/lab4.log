@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.29)  24 APR 2019 04:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.29)  24 APR 2019 18:37
 entering extended mode
 **./lab4.tex
 (lab4.tex
@@ -630,54 +630,70 @@ Overfull \hbox (35.55173pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
-[4 <./immagini/testbench2.PNG> <./immagini/RTB3.jpg>]
-<immagini/RT5.jpg, id=42, 498.73828pt x 520.94624pt>
+<immagini/RTL4_4.jpg, id=37, 973.83826pt x 175.857pt>
+File: immagini/RTL4_4.jpg Graphic file (type jpg)
+<use immagini/RTL4_4.jpg>
+Package pdftex.def Info: immagini/RTL4_4.jpg  used on input line 162.
+(pdftex.def)             Requested size: 486.91794pt x 87.92828pt.
+
+Overfull \hbox (59.4864pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+<immagini/Testbench.jpg, id=38, 808.82175pt x 397.485pt>
+File: immagini/Testbench.jpg Graphic file (type jpg)
+<use immagini/Testbench.jpg>
+Package pdftex.def Info: immagini/Testbench.jpg  used on input line 167.
+(pdftex.def)             Requested size: 363.96642pt x 178.8666pt.
+[4 <./immagini/testbench2.PNG> <./immagini/RTB3.jpg>] [5 <./immagini/RTL4_4.jpg
+> <./immagini/Testbench.jpg>]
+<immagini/RT5.jpg, id=47, 498.73828pt x 520.94624pt>
 File: immagini/RT5.jpg Graphic file (type jpg)
 <use immagini/RT5.jpg>
-Package pdftex.def Info: immagini/RT5.jpg  used on input line 160.
+Package pdftex.def Info: immagini/RT5.jpg  used on input line 176.
 (pdftex.def)             Requested size: 299.24527pt x 312.57016pt.
- [5 <./immagini/RT5.jpg>]
-<immagini/RTBCD.jpg, id=46, 746.79pt x 293.22047pt>
+ [6 <./immagini/RT5.jpg>]
+<immagini/RTBCD.jpg, id=52, 746.79pt x 293.22047pt>
 File: immagini/RTBCD.jpg Graphic file (type jpg)
 <use immagini/RTBCD.jpg>
-Package pdftex.def Info: immagini/RTBCD.jpg  used on input line 171.
+Package pdftex.def Info: immagini/RTBCD.jpg  used on input line 187.
 (pdftex.def)             Requested size: 448.07745pt x 175.93362pt.
 
-Overfull \hbox (20.64592pt too wide) in paragraph at lines 171--172
+Overfull \hbox (20.64592pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
 
-Overfull \hbox (12.37099pt too wide) in paragraph at lines 178--181
+Overfull \hbox (12.37099pt too wide) in paragraph at lines 194--197
 \OML/cmm/m/it/12 MEM\OT1/cmr/m/n/12 0$ el-e-ment is re-spon-si-ble to gen-er-at
 e the en-able sig-nal for the $\OML/cmm/m/it/12 counter[]comparator$
  []
 
 
-Overfull \hbox (29.0449pt too wide) in paragraph at lines 178--181
+Overfull \hbox (29.0449pt too wide) in paragraph at lines 194--197
 \OT1/cmr/m/n/12 when oc-curs pulse of $\OML/cmm/m/it/12 KEY[]$\OT1/cmr/m/n/12 .
  The $\OML/cmm/m/it/12 KEY[]$ \OT1/cmr/m/n/12 in-put is con-nected also to the 
 $\OML/cmm/m/it/12 Asynchronous[]clear$
  []
 
-[6 <./immagini/RTBCD.jpg>]
-Overfull \hbox (1.20682pt too wide) in paragraph at lines 182--184
+[7 <./immagini/RTBCD.jpg>]
+Overfull \hbox (1.20682pt too wide) in paragraph at lines 198--200
 \OT1/cmr/m/n/12 out-put is di-rectly taken from the $\OML/cmm/m/it/12 BCD[]\OT1
 /cmr/m/n/12 4\OML/cmm/m/it/12 digits[]counter$\OT1/cmr/m/n/12 . The $\OML/cmm/m
 /it/12 Millisecond[]counter[]tt$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--199
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
-[7] (lab4.aux) ) 
+[8] (lab4.aux) ) 
 Here is how much of TeX's memory you used:
- 16713 strings out of 492945
- 318614 string characters out of 3126252
+ 16723 strings out of 492945
+ 318839 string characters out of 3126252
  366970 words of memory out of 3000000
- 20476 multiletter control sequences out of 15000+200000
+ 20484 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,63p,872b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -691,9 +707,9 @@ b><C:/Users/arabu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr12.pfb><C:/Users/arabu/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb><C:/Users/arabu/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on lab4.pdf (8 pages, 835157 bytes).
+Output written on lab4.pdf (9 pages, 1023184 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

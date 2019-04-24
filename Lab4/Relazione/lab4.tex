@@ -152,8 +152,24 @@ In this section the counter has been implemented by means of a process using the
 \end{figure}
 
 \section{Flashing digits from 0 to 9}
-The objective of this section of the laboratory is to design a circuit that show all digits (from 0 to 9) sequentially on a DE10 7-segments display, The displayed digit changes every second. The desired timing is achieved by using the reference 50Mhz clock (CLOCK\_50) of the DE10 board.
-The overall circuit is composed by 3 components: a counter that counts a second, a counter that stores and updates the displayed digit and the BCD to 7-segments encoding decoder.
+The objective of this section of the laboratory is to design a circuit that shows all digits (from 0 to 9) sequentially on a DE10 7-segments display, The displayed digit changes every second. The desired timing is achieved by using the reference 50Mhz clock (CLOCK\_50) of the DE10 board, that is the sole clock signal of the circuit. \newline
+The overall circuit is composed of 3 components: a counter that manages the 1-second timing (seconds\_counter.vhd), a counter that stores and updates the displayed digit (digit\_counter.vhd) and the BCD to 7-segments decoder.\newline
+The first counter (seconds\_counter) scales the reference counter to 1 second. After 50 million clocks the counter generates a 1-second signal for 1 clock cycle which is passed as an enable signal to the digit counter.
+This counter returns as output the BCD encoding of the current digit that is used by the 7-segments decoder to drive the rightmost display (HEX0) of the board.\newline
+The circuit has an asynchronous reset mechanism associated with the KEY0 button of the board, it is used for initializing the circuit.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.5]{immagini/RTL4_4.jpg}
+	\caption{The RTL view of the circuit}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.45]{immagini/Testbench.jpg}
+\caption{The result of the simulation of the circuit 4}
+\end{figure}
+\subsection{Testing the circuit}
+Since the enormous amount of clock cycles need for counting a second, during the simulation with Modelsim the timing counter was modified to send the enable signal every 5 clock cycles (the modified lines for testing are present in the source file as comments).\newline
+The testbench of the circuit tests firstly the reset button and then iterates, through a for loop for, the complete cycle of all 10 digits plus the starting of another cycle.
 \section{Reaction Timer}
 \begin{figure}[h]
 \centering
