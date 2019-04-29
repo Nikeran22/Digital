@@ -109,7 +109,21 @@ The Circuit that implements this FSM with this state encoding is shown in $figur
 	\includegraphics[scale = 0.7]{immagini/Berchialla/Code2.jpg}
 	\caption{Modified One-Hot code}
 \end{figure}
-\section{}
+\section{Two-process FSM}
+The task of this part is to provide an alternative implementation of the previous FSM. This implementation is composed of 3 processes each describing one of the 3 fundamental components of a generic FSM (2 combinational and 1 sequential): the first combinational circuit determines the future state based on the current state and inputs, the other combinational circuit manages the output according to the current state and the state flip-flops that store the current state. \newline
+A single VHDL source file contains all the circuit. The inputs of the circuit are the first 2 switches (SW0 for the synchronous reset and SW1 for real input) and the button KEY0 used for simulating, while the sole single bit output drives the LEDR0 LED.
+Using this architecture, Quartus Prime during compilation successfully recognizes that the circuit is a state machine and generates the relative state diagram, which corresponds to the desired one. \newline
+The circuit was tested using a testbench that generates all the possible state transitions. The same testbench tested also the synchronous reset mechanism.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.45]{immagini/AndreaMattei/RTL5_3.jpg}
+	\caption{The RTL generated of the state machine of part 3}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.45]{immagini/AndreaMattei/state_machine_5_3.jpg}
+	\caption{The state diagram of the state machine of part 3}
+\end{figure}
 \newpage
 \section{- “HELLO” FSM}
 In this section a circuit that scrolls the word "HELLO" over the display has been implemented.

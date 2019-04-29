@@ -83,7 +83,7 @@ begin
     case y_q is
         when E => z<='1';
         when I => z<='1';
-        when others => z<='0';
+        when others => z<='0';--errors safeguard
     end case;
 end process;
 
