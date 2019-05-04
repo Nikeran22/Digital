@@ -4,7 +4,7 @@ library IEEE;
 --	use ieee.std_logic_arith.all;
 
 
-entity reg_8_1kB is --1kByte register 8 bit data
+entity reg_8_1kB is --1kByte register 8 bit data 
 	port(
 			cs, wr, rd: in std_logic;
 			address: in std_logic_vector(9 downto 0);
