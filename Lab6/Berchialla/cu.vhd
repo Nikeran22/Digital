@@ -142,9 +142,9 @@ begin
         when W1_start => ResetA<='0';
 		ResetB<='0';
 		ResetL<='1';
-		ResetSR<='0';
-		ResetOP<='0';
-		ResetR<='0';
+		ResetSR<='1';
+		ResetOP<='1';
+		ResetR<='1';
 		WRA<='0';
 		CSA<='0';
 		RDA<='0';
