@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  12 MAY 2019 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  13 MAY 2019 00:23
 entering extended mode
 **./lab6.tex
 (lab6.tex
@@ -566,23 +566,26 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] (lab6.aux) ) 
+g>] [1] (lab6.aux) ) 
 Here is how much of TeX's memory you used:
- 16653 strings out of 492945
- 317385 string characters out of 3126253
- 362971 words of memory out of 3000000
- 20428 multiletter control sequences out of 15000+200000
- 539275 words of font info for 49 fonts, out of 3000000 for 9000
+ 16656 strings out of 492945
+ 317437 string characters out of 3126253
+ 363971 words of memory out of 3000000
+ 20431 multiletter control sequences out of 15000+200000
+ 540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,5n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab6.pdf (1 page, 69236 bytes).
+ 40i,11n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
+ers/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb>
+Output written on lab6.pdf (2 pages, 99749 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
