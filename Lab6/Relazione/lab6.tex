@@ -115,7 +115,7 @@ The figure below shows the testbench for the register file.
 \newline\newline\newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.47]{immagini/memory_tb.png}
+	\includegraphics[scale = 0.55]{immagini/memory_tb.png}
 	\caption{Memory testbench}
 \end{figure}
 
@@ -128,43 +128,77 @@ The final implementation exploits the left and right shifting operations.
 
 A 11 bit shift register has been implemented with parallel load and parallel output.
 
+The $LOAD$ signal must be asserted to load the $parallel\;input$ data into the register, in a synchronous way with the positive edge of the clock.
+
+The $SL$ and $SR$ commands permit the left or right shift of the internal memorized data.  
+  
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.6]{immagini/shreg.jpg}
+	\caption{Shift register}
+\end{figure}
+
 The testbench for the 8-bit version is shown below:
  
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.47]{immagini/shift_reg_tb.png}
-	\caption{State diagram of the FSM}
+	\includegraphics[scale = 0.55]{immagini/shift_reg_tb.png}
+	\caption{Shift register test bench}
 \end{figure}
 
 \newpage
 
 \subsection*{Adder}
 
-\begin{figure}[h]
+An 11-bit of a classical adder has been implemented, allowed to perform additions and subtractions by means of the  $Cin$ signal.
+\begin{figure}[h!]
 	\centering
-	\includegraphics[scale = 0.47]{immagini/adder_tb.png}
-	\caption{State diagram of the FSM}
+	\includegraphics[scale = 0.65]{immagini/adder.jpg}
+	\caption{Adder}
 \end{figure}
 
+
+Below is shown the test bench of the designed adder.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.55]{immagini/adder_tb.png}
+	\caption{Adder test bench}
+\end{figure}
+
+\subsection*{Data converters}
+
+Finally, since the circuit must be able to determine both overflow and underflow it uses 2 blocks able to convert 8 bit signals to 11 bit and vice versa, as will be discussed in further sections. 
+
+The simulated test bench are shown below: 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/8_11_tb.png}
+	\vspace{1mm}	
+	\centering
+	\includegraphics[scale = 0.47]{immagini/11_8_tb.png}
+	\caption{8 to 11 bit converter; 11 to 8 bit converter}
+\end{figure}
+\newpage
 \subsection*{Counter}
+To be able to go through the various addresses an universal counter has also been implemented as shown: 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/counter10.jpg}
+	\caption{10 bit counter}
+\end{figure}
+The counter can count up or down. 
+Furthermore, the output ports $tcd$ and $tcu$ have an high logical value when the counter reaches respectively its minimum or maximum possible value.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.47]{immagini/counter_tb.png}
-	\caption{State diagram of the FSM}
+	\caption{10 bit counter test bench}
 \end{figure}
 
-\subsection*{data converters}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale = 0.47]{immagini/8_11_tb.png}
-	\caption{State diagram of the FSM}
-	
-	\centering
-	\includegraphics[scale = 0.47]{immagini/11_8_tb.png}
-	\caption{State diagram of the FSM}
-\end{figure}
 
 
 
