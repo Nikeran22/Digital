@@ -91,17 +91,84 @@ where $ X(n) $ are the input stream data and $ Y(n) $ the corresponding filtered
 
 The circuit starts by means of a $START$ signal which enable a loading process of the input data into a 1 kByte memory. Then, the circuit automatically filters the data stream exploiting the equation already provided and loads the output filtered data into a second memory. Finally, the circuit reports end of process asserting an $HIGH$ logical value to the $DONE$ signal and awaits until the next $START$.
 
-\subsection*{Shift registers}
+Every used component will now be discussed as single blocks, and individually debugged:
+\newpage
 \subsection*{Memories}
+
+As already discussed, the final implementation will save the input data in a 1kByte memory while memorizing the output data into an output memory. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.7]{immagini/memory.png}
+	\caption{ 1kByte memory }
+\end{figure}
+
+The memories store 1024 samples represented as 8 bit wide 2's complement values.
+The writing operation is synchronous with the positive edge of the clock, while the reading is asynchronous. 
+
+The samples must be stored in order, from address 0 to 1023.
+
+Once the desired address is selected and the RD signal asserted, the output data are shown in the $ data out $ parallel output.
+
+The figure below shows the testbench for the register file.
+\newline\newline\newline
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/memory_tb.png}
+	\caption{Memory testbench}
+\end{figure}
+
+\newpage
+\subsection*{Shift registers and registers}
+
+To be able to implement the already stated main equation, the circuit needs to perform 2s multiple multiplication and/or division.
+
+The final implementation exploits the left and right shifting operations.
+
+A 11 bit shift register has been implemented with parallel load and parallel output.
+
+The testbench for the 8-bit version is shown below:
+ 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/shift_reg_tb.png}
+	\caption{State diagram of the FSM}
+\end{figure}
+
+\newpage
+
 \subsection*{Adder}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/adder_tb.png}
+	\caption{State diagram of the FSM}
+\end{figure}
+
 \subsection*{Counter}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/counter_tb.png}
+	\caption{State diagram of the FSM}
+\end{figure}
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[scale = 0.47]{immagini/Berchialla/STG.jpg}
-%	\caption{State diagram of the FSM}
-%\end{figure}
+\subsection*{data converters}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.47]{immagini/8_11_tb.png}
+	\caption{State diagram of the FSM}
+	
+	\centering
+	\includegraphics[scale = 0.47]{immagini/11_8_tb.png}
+	\caption{State diagram of the FSM}
+\end{figure}
+
+
+
+
 \end{document}
 
 

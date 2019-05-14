@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  13 MAY 2019 00:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  14 MAY 2019 18:06
 entering extended mode
 **./lab6.tex
 (lab6.tex
@@ -566,26 +566,75 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
  [1
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab6.aux) ) 
+g>] [1]
+<immagini/memory.png, id=15, 174.6525pt x 202.88297pt>
+File: immagini/memory.png Graphic file (type png)
+<use immagini/memory.png>
+Package pdftex.def Info: immagini/memory.png  used on input line 103.
+(pdftex.def)             Requested size: 122.2559pt x 142.01709pt.
+<immagini/memory_tb.png, id=17, 779.16093pt x 134.37703pt>
+File: immagini/memory_tb.png Graphic file (type png)
+<use immagini/memory_tb.png>
+Package pdftex.def Info: immagini/memory_tb.png  used on input line 118.
+(pdftex.def)             Requested size: 366.20569pt x 63.1572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--121
+
+ []
+
+[2 <./immagini/memory.png> <./immagini/memory_tb.png>]
+<immagini/shift_reg_tb.png, id=23, 781.04297pt x 133.62422pt>
+File: immagini/shift_reg_tb.png Graphic file (type png)
+<use immagini/shift_reg_tb.png>
+Package pdftex.def Info: immagini/shift_reg_tb.png  used on input line 135.
+(pdftex.def)             Requested size: 367.09024pt x 62.80338pt.
+ [3 <./immagini/shift_reg_tb.png>]
+<immagini/adder_tb.png, id=28, 784.43062pt x 78.2925pt>
+File: immagini/adder_tb.png Graphic file (type png)
+<use immagini/adder_tb.png>
+Package pdftex.def Info: immagini/adder_tb.png  used on input line 145.
+(pdftex.def)             Requested size: 368.68243pt x 36.79747pt.
+<immagini/counter_tb.png, id=29, 779.16093pt x 112.54547pt>
+File: immagini/counter_tb.png Graphic file (type png)
+<use immagini/counter_tb.png>
+Package pdftex.def Info: immagini/counter_tb.png  used on input line 153.
+(pdftex.def)             Requested size: 366.20569pt x 52.89636pt.
+<immagini/8_11_tb.png, id=30, 780.66656pt x 41.4047pt>
+File: immagini/8_11_tb.png Graphic file (type png)
+<use immagini/8_11_tb.png>
+Package pdftex.def Info: immagini/8_11_tb.png  used on input line 161.
+(pdftex.def)             Requested size: 366.91333pt x 19.46019pt.
+<immagini/11_8_tb.png, id=31, 777.2789pt x 73.02281pt>
+File: immagini/11_8_tb.png Graphic file (type png)
+<use immagini/11_8_tb.png>
+Package pdftex.def Info: immagini/11_8_tb.png  used on input line 165.
+(pdftex.def)             Requested size: 365.32112pt x 34.32071pt.
+ [4 <./immagini/adder_tb.png> <./immagini/counter_tb.png> <./immagini/8_11_tb.p
+ng> <./immagini/11_8_tb.png>] (lab6.aux) ) 
 Here is how much of TeX's memory you used:
- 16656 strings out of 492945
- 317437 string characters out of 3126253
+ 16693 strings out of 492945
+ 318270 string characters out of 3126253
  363971 words of memory out of 3000000
- 20431 multiletter control sequences out of 15000+200000
+ 20459 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/nikil/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Us
-ers/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb>
-Output written on lab6.pdf (2 pages, 99749 bytes).
+ 40i,11n,63p,814b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/n
+ikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.p
+fb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab6.pdf (5 pages, 339948 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
