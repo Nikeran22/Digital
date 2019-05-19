@@ -170,7 +170,7 @@ Below is shown the test bench of the designed adder.
 
 \subsection*{Data converters}
 
-Finally, since the circuit must be able to determine both overflow and underflow it uses 2 blocks able to convert 8 bit signals to 11 bit and vice versa, as will be discussed in further sections. 
+Finally, since the circuit must be able to determine overflow/underflow and saturate the output if needed, it uses 2 blocks able to convert 8 bit signals to 11 bit and vice versa, as will be discussed in further sections. 
 
 The simulated test bench are shown below: 
 
@@ -199,8 +199,24 @@ Furthermore, the output ports $tcd$ and $tcu$ have an high logical value when th
 	\caption{10 bit counter test bench}
 \end{figure}
 
+\section*{Data path}
+The data path of the filter has been designed with two primary goals: use the minimum number of components and simplify the control unit.
 
+All the computations in the circuits are made on 11 bits (range: 1023 to -1024), because the biggest absolute value of $Y(n)$ is 864. 
 
+The computation of $Y(n)$ is performed in several steps:
+1) an 8 bits number is read from Memory A converted to 11 bits and stored in the shift register
+2)the shift register applies the proper division/multiplication factor
+3)the multiplied/divided number is saved in the register $Operand$
+4)in the register $Result$ is saved the content of the operation $Result +/- Operand$ with the proper sign
+5)if the computation of $Y(n)$ is not complete we restart from step 1, if it is complete the value stored in $Result$ is converted to 8 bits and written in Memory B.
+
+\section*{Control unit}
+The control unit has been implemented as a Moore finite state machine and is able to mange all the phases of the circuit: the acquisition and the computation.   
+
+In the acquisition phase (state:$Read1$) the memory is selected and configured to write, the $counterA$ (which contains the address of A) is configured to count up. The cu remains in this state as long as the terminal counter up of $counterA$ remains to 0. 
+
+The computation phase is done in two while loops: the first starts with $W1_start$ and ends when the terminal counter up of $couner B$ is 1 that means that all $Y(n)$ have been computed and written in Memory B. The second loop starts with $W2_starts$ and ends if the terminal counter down of $counterA$ is 1 therefore there are no valid addresses to retrieve the x(n-1/2/3) or if the terminal counter up of $loop$ is 1. The $loop$ counter
 
 
 \end{document}
