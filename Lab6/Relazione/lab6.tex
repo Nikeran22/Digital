@@ -210,16 +210,37 @@ The computation of $Y(n)$ is performed in several steps:\\
 5)if the computation of $Y(n)$ is not complete we restart from step 1, if it is complete the value stored in $Result$ is converted to 8 bits and written in Memory B.\\
 
 \section*{Control unit}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.7]{immagini/fsm.jpg}
+	\caption{stade diagram of the control unit}
+\end{figure}
+
 The control unit has been implemented as a Moore finite state machine and is able to mange all the phases of the circuit: the acquisition and the computation.   \\
 In the acquisition phase (state:$Read1$) the memory is selected and configured to write, the $counterA$ (which contains the address of A) is configured to count up. The cu remains in this state as long as the terminal counter up of $counterA$ remains to 0. \\
-The computation phase is done in two while loops: the first starts with $W1_start$ and ends when the terminal counter up of $couner B$ is 1 that means that all $Y(n)$ have been computed and written in Memory B. The second loop starts with $W2_starts$ and ends if the terminal counter down of $counterA$ is 1 therefore there are no valid addresses to retrieve the x(n-1/2/3) or if the terminal counter up of $loop$ is 1. The $loop$ counter is a 2 bit counter that is connected to the control unit and its value keeps track of the stage of the computation of $Y(n)$:\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.55]{immagini/timing1.jpg}
+	\caption{timing of read operations}
+\end{figure}
+
+The computation phase is done in two while loops: the first starts with $W1\_start$ and ends when the terminal counter up of $counterB$ is 1 that means that all $Y(n)$ have been computed and written in Memory B. The second loop starts with $W2\_starts$ and ends if the terminal counter down of $counterA$ is 1 therefore there are no valid addresses to retrieve the x(n-1/2/3) or if the terminal counter up of $loop$ is 1. The $loop$ counter is a 2 bit counter that is connected to the control unit and its value keeps track of the stage of the computation of $Y(n)$:\\
 - when $loop=00$ $Y(n)=-0.5x(n)$ \\
 - when $loop=01$ $Y(n)=-0.5x(n)-2x(n-1)$\\
 - when $loop=01$ $Y(n)=-0.5x(n)-2x(n-1)+4x(n-2)$\\
 - when $loop=11$ $Y(n)=-0.5x(n)-2x(n-1)+4x(n-2)+0.25x(n-3)$.\\
 
+\begin{figure}[h]
+	
+	\includegraphics[scale = 0.5]{immagini/timing2.pdf}
+	\caption{timing of a computation of Y(n)}
+\end{figure}
+
+
+\newpage
 \section*{Testbench}
-In the file $dfilter_tb$ there is a simple testbench where is generated a clock and given to the circuit the input data. The input data have been generated with a counter that counts from 0 to 1023 in unsigned 8 bits numbers. \\
+In the file $dfilter\_tb$ there is a simple testbench where is generated a clock and given to the circuit the input data. The input data have been generated with a counter that counts from 0 to 1023 in unsigned 8 bits numbers. \\
 With the help of Modelsym we are able to make to simulate the circuit until it finishes its computations and asserts the done output, than go to the memory panel and save as a file the contents of the memories A and B in binary form in two distinct files A.mem and B.mem, where we removed the first part of comment generated from Modelsym. \\
 Using a custom Matlab script we are able to read both the files and perform in Matlab the same operations of the circuit using as input data the data read from A.mem and than compare the results. 
 
