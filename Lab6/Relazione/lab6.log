@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  19 MAY 2019 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  19 MAY 2019 17:46
 entering extended mode
 **./lab6.tex
 (lab6.tex
@@ -606,24 +606,33 @@ File: immagini/counter_tb.png Graphic file (type png)
 <use immagini/counter_tb.png>
 Package pdftex.def Info: immagini/counter_tb.png  used on input line 198.
 (pdftex.def)             Requested size: 366.20569pt x 52.89636pt.
- [5 <./immagini/counter10.jpg> <./immagini/counter_tb.png>] [6] (lab6.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--211
+
+ []
+
+[5 <./immagini/counter10.jpg> <./immagini/counter_tb.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
+
+ []
+
+[6] (lab6.aux) ) 
 Here is how much of TeX's memory you used:
  16716 strings out of 492946
  315983 string characters out of 3135629
- 364132 words of memory out of 3000000
+ 365132 words of memory out of 3000000
  20479 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,63p,814b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb>
-Output written on lab6.pdf (7 pages, 532772 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab6.pdf (7 pages, 535321 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

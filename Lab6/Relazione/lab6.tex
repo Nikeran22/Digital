@@ -200,23 +200,28 @@ Furthermore, the output ports $tcd$ and $tcu$ have an high logical value when th
 \end{figure}
 
 \section*{Data path}
-The data path of the filter has been designed with two primary goals: use the minimum number of components and simplify the control unit.
-
-All the computations in the circuits are made on 11 bits (range: 1023 to -1024), because the biggest absolute value of $Y(n)$ is 864. 
-
-The computation of $Y(n)$ is performed in several steps:
-1) an 8 bits number is read from Memory A converted to 11 bits and stored in the shift register
-2)the shift register applies the proper division/multiplication factor
-3)the multiplied/divided number is saved in the register $Operand$
-4)in the register $Result$ is saved the content of the operation $Result +/- Operand$ with the proper sign
-5)if the computation of $Y(n)$ is not complete we restart from step 1, if it is complete the value stored in $Result$ is converted to 8 bits and written in Memory B.
+The data path of the filter has been designed with two primary goals: use the minimum number of components and simplify the control unit.\\
+All the computations in the circuits are made on 11 bits (range: 1023 to -1024), because the biggest absolute value of $Y(n)$ is 864. \\
+The computation of $Y(n)$ is performed in several steps:\\
+1) an 8 bits number is read from Memory A converted to 11 bits and stored in the shift register\\
+2)the shift register applies the proper division/multiplication factor\\
+3)the multiplied/divided number is saved in the register $Operand$\\
+4)in the register $Result$ is saved the content of the operation $Result +/- Operand$ with the proper sign\\
+5)if the computation of $Y(n)$ is not complete we restart from step 1, if it is complete the value stored in $Result$ is converted to 8 bits and written in Memory B.\\
 
 \section*{Control unit}
-The control unit has been implemented as a Moore finite state machine and is able to mange all the phases of the circuit: the acquisition and the computation.   
+The control unit has been implemented as a Moore finite state machine and is able to mange all the phases of the circuit: the acquisition and the computation.   \\
+In the acquisition phase (state:$Read1$) the memory is selected and configured to write, the $counterA$ (which contains the address of A) is configured to count up. The cu remains in this state as long as the terminal counter up of $counterA$ remains to 0. \\
+The computation phase is done in two while loops: the first starts with $W1_start$ and ends when the terminal counter up of $couner B$ is 1 that means that all $Y(n)$ have been computed and written in Memory B. The second loop starts with $W2_starts$ and ends if the terminal counter down of $counterA$ is 1 therefore there are no valid addresses to retrieve the x(n-1/2/3) or if the terminal counter up of $loop$ is 1. The $loop$ counter is a 2 bit counter that is connected to the control unit and its value keeps track of the stage of the computation of $Y(n)$:\\
+- when $loop=00$ $Y(n)=-0.5x(n)$ \\
+- when $loop=01$ $Y(n)=-0.5x(n)-2x(n-1)$\\
+- when $loop=01$ $Y(n)=-0.5x(n)-2x(n-1)+4x(n-2)$\\
+- when $loop=11$ $Y(n)=-0.5x(n)-2x(n-1)+4x(n-2)+0.25x(n-3)$.\\
 
-In the acquisition phase (state:$Read1$) the memory is selected and configured to write, the $counterA$ (which contains the address of A) is configured to count up. The cu remains in this state as long as the terminal counter up of $counterA$ remains to 0. 
-
-The computation phase is done in two while loops: the first starts with $W1_start$ and ends when the terminal counter up of $couner B$ is 1 that means that all $Y(n)$ have been computed and written in Memory B. The second loop starts with $W2_starts$ and ends if the terminal counter down of $counterA$ is 1 therefore there are no valid addresses to retrieve the x(n-1/2/3) or if the terminal counter up of $loop$ is 1. The $loop$ counter
+\section*{Testbench}
+In the file $dfilter_tb$ there is a simple testbench where is generated a clock and given to the circuit the input data. The input data have been generated with a counter that counts from 0 to 1023 in unsigned 8 bits numbers. \\
+With the help of Modelsym we are able to make to simulate the circuit until it finishes its computations and asserts the done output, than go to the memory panel and save as a file the contents of the memories A and B in binary form in two distinct files A.mem and B.mem, where we removed the first part of comment generated from Modelsym. \\
+Using a custom Matlab script we are able to read both the files and perform in Matlab the same operations of the circuit using as input data the data read from A.mem and than compare the results. 
 
 
 \end{document}
