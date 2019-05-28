@@ -75,7 +75,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\subsection{Generating a square wave}
+In order to make this part of the laboratory we modified the code from the previous exercise. We changed the output pin from the one associated with the LED to the one related to the D2 pin of the board (PA10 of the microcontroller).
+At the beginning we decided to try the code without adding the code given in the description of exercise and we saw a stable waveform. After adding the code, we noticed that the period of the square wave was unstable. The reason for this unstability is the fact that the additional code generated a pseudo-random delays every system clock tick.
 
+\begin{figure}[h]
+	
+	\includegraphics[scale = 0.5]{NewFile1.png}
+	\caption{the generated waveform with the disturbance}
+\end{figure}
 
 
 
