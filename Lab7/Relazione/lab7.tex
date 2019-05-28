@@ -77,6 +77,27 @@
 \newpage
 
 
+\section{Using a switch to toggle the LED, CubeMX approach}
+In this section we'll deal with the same exercise as the previous one, using a CubeMX approach with LL (Low Layer) libraries. 
+
+In CubeMX we set the GPIO input and output respectively to pin A5 and C13 to correctly configure the LED and Button.
+
+Apart from the I/O configuration, the algorithm is implemented as the point 1.1.
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale = 0.7]{immagini/1_2.png}
+		\caption{CubeMX GPIO configurations}
+	\end{figure}
+
+\section{Varying the blinking frequency}
+
+Varying the maximum "for" counting number we can play on the blinking frequency.
+The maximum appreciable frequency is around , due to 2 main reasons:
+The maximal frame rate humans can perceive is around 70 Hz. Furthermore the LED being not an ideal component shows parasitic effects (Equivalent RC filter) that decrease the maximum appreciable frequency to about 60 Hz. 
+
+
+
 
 
 \end{document}
