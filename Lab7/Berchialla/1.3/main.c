@@ -99,7 +99,7 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   int i,wait,button,button_old;
-  wait=64000000/2;
+  wait=8000000;
   //wait = 10;
 
   LL_GPIO_WriteReg(GPIOA,ODR,(LL_GPIO_ReadReg(GPIOA,ODR) & ~ 0x20) );
@@ -269,3 +269,5 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+
