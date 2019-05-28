@@ -77,10 +77,35 @@
 \newpage
 
 
+<<<<<<< HEAD
 \section{1.1 Using a switch to toggle the LED, Low Level Approach}
 Following the instructions in the Lab7document we created an empty project in SWB4STM32, than the pointers for the GPIOA\_MODER, GPIOA\_ODR, GPIOC\_MOER, GPIOC\_IDR and RCC\_AHB1ENR have been initialized. \\
 The clock has been configured to 1 for the GPIOA and GPIOC devices, after that the GPIOA pin5 has been configured as output and GPIOC pin 13 as input.\\
 The application code starts with the initialization of the led to $off$ than we acquire a first time the complemented value of the button in button\_old. In the infinite while loop as first time we acquire the complemented button's value in button, after we if a 0-1 transition happened we complement the bit 5 of GPIO\_ODR. As last action we update button\_old with the value button.
+=======
+\section{Using a switch to toggle the LED, CubeMX approach}
+In this section we'll deal with the same exercise as the previous one, using a CubeMX approach with LL (Low Layer) libraries. 
+
+In CubeMX we set the GPIO input and output respectively to pin A5 and C13 to correctly configure the LED and Button.
+
+Apart from the I/O configuration, the algorithm is implemented as the point 1.1.
+
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[scale = 0.7]{immagini/1_2.png}
+		\caption{CubeMX GPIO configurations}
+	\end{figure}
+
+\section{Varying the blinking frequency}
+
+Varying the maximum "for" counting number we can play on the blinking frequency.
+The maximum appreciable frequency is around , due to 2 main reasons:
+The maximal frame rate humans can perceive is around 70 Hz. Furthermore the LED being not an ideal component shows parasitic effects (Equivalent RC filter) that decrease the maximum appreciable frequency to about 60 Hz. 
+
+
+
+
+>>>>>>> master
 
 \end{document}
 
