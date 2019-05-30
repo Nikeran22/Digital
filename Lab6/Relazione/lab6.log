@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.1)  19 MAY 2019 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.1)  30 MAY 2019 11:38
 entering extended mode
 **./lab6.tex
 (lab6.tex
@@ -606,64 +606,89 @@ File: immagini/counter_tb.png Graphic file (type png)
 <use immagini/counter_tb.png>
 Package pdftex.def Info: immagini/counter_tb.png  used on input line 198.
 (pdftex.def)             Requested size: 366.20569pt x 52.89636pt.
+ [5 <./immagini/counter10.jpg> <./immagini/counter_tb.png>]
+<immagini/Datapath.png, id=45, 2861.69125pt x 880.28876pt>
+File: immagini/Datapath.png Graphic file (type png)
+<use immagini/Datapath.png>
+Package pdftex.def Info: immagini/Datapath.png  used on input line 205.
+(pdftex.def)             Requested size: 486.48108pt x 149.64711pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--211
+Overfull \hbox (59.04955pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--216
 
  []
 
-[5 <./immagini/counter10.jpg> <./immagini/counter_tb.png>]
-<immagini/fsm.jpg, id=45, 569.9694pt x 635.4942pt>
+<immagini/fsm.jpg, id=46, 569.9694pt x 635.4942pt>
 File: immagini/fsm.jpg Graphic file (type jpg)
 <use immagini/fsm.jpg>
-Package pdftex.def Info: immagini/fsm.jpg  used on input line 215.
-(pdftex.def)             Requested size: 398.97586pt x 444.84291pt.
+Package pdftex.def Info: immagini/fsm.jpg  used on input line 220.
+(pdftex.def)             Requested size: 484.47629pt x 540.17262pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
-
+Overfull \hbox (57.04475pt too wide) in paragraph at lines 220--221
+ [][] 
  []
 
-[6 <./immagini/fsm.jpg>]
-<immagini/timing1.jpg, id=50, 543.7113pt x 286.1892pt>
-File: immagini/timing1.jpg Graphic file (type jpg)
-<use immagini/timing1.jpg>
-Package pdftex.def Info: immagini/timing1.jpg  used on input line 224.
-(pdftex.def)             Requested size: 299.04213pt x 157.40453pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--233
-
- []
-
-
-
-pdfTeX warning: pdflatex.exe (file ./immagini/timing2.pdf): PDF inclusion: foun
-d PDF version <1.7>, but at most version <1.5> allowed
-<immagini/timing2.pdf, id=51, 845.07724pt x 597.55246pt>
-File: immagini/timing2.pdf Graphic file (type pdf)
-<use immagini/timing2.pdf>
-Package pdftex.def Info: immagini/timing2.pdf  used on input line 236.
-(pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./immagini/timing1.jpg>] [8 <./immagini/timing2.pdf>] (lab6.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+<immagini/timing1.jpg, id=47, 543.7113pt x 286.1892pt>
+File: immagini/timing1.jpg Graphic file (type jpg)
+<use immagini/timing1.jpg>
+Package pdftex.def Info: immagini/timing1.jpg  used on input line 229.
+(pdftex.def)             Requested size: 299.04213pt x 157.40453pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--238
+
+ []
+
+[6 <./immagini/Datapath.png>]
+
+pdfTeX warning: pdflatex.exe (file ./immagini/timing2.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<immagini/timing2.pdf, id=53, 845.07724pt x 597.55246pt>
+File: immagini/timing2.pdf Graphic file (type pdf)
+<use immagini/timing2.pdf>
+Package pdftex.def Info: immagini/timing2.pdf  used on input line 241.
+(pdftex.def)             Requested size: 498.59125pt x 352.55289pt.
+
+Overfull \hbox (71.15971pt too wide) in paragraph at lines 241--242
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./immagini/fsm.jpg>] [9 <./immagini/timing1.jpg> <./immagini/timing2.pd
+f>] (lab6.aux) ) 
 Here is how much of TeX's memory you used:
- 16724 strings out of 492945
- 316214 string characters out of 3135514
- 363971 words of memory out of 3000000
- 20484 multiletter control sequences out of 15000+200000
+ 16729 strings out of 492945
+ 316329 string characters out of 3135514
+ 365971 words of memory out of 3000000
+ 20488 multiletter control sequences out of 15000+200000
  540188 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,63p,814b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb>
-Output written on lab6.pdf (9 pages, 1315748 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab6.pdf (10 pages, 1363947 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -198,8 +198,13 @@ Furthermore, the output ports $tcd$ and $tcu$ have an high logical value when th
 	\includegraphics[scale = 0.47]{immagini/counter_tb.png}
 	\caption{10 bit counter test bench}
 \end{figure}
-
+\newpage
 \section*{Data path}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.17]{immagini/Datapath.png}
+	\caption{Datapath}
+\end{figure}
 The data path of the filter has been designed with two primary goals: use the minimum number of components and simplify the control unit.\\
 All the computations in the circuits are made on 11 bits (range: 1023 to -1024), because the biggest absolute value of $Y(n)$ is 864. \\
 The computation of $Y(n)$ is performed in several steps:\\
@@ -212,7 +217,7 @@ The computation of $Y(n)$ is performed in several steps:\\
 \section*{Control unit}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.7]{immagini/fsm.jpg}
+	\includegraphics[scale = 0.85]{immagini/fsm.jpg}
 	\caption{stade diagram of the control unit}
 \end{figure}
 
@@ -233,12 +238,12 @@ The computation phase is done in two while loops: the first starts with $W1\_sta
 
 \begin{figure}[h]
 	
-	\includegraphics[scale = 0.5]{immagini/timing2.pdf}
+	\includegraphics[scale = 0.59]{immagini/timing2.pdf}
 	\caption{timing of a computation of Y(n)}
 \end{figure}
 
 
-\newpage
+
 \section*{Testbench}
 In the file $dfilter\_tb$ there is a simple testbench where is generated a clock and given to the circuit the input data. The input data have been generated with a counter that counts from 0 to 1023 in unsigned 8 bits numbers. \\
 With the help of Modelsym we are able to make to simulate the circuit until it finishes its computations and asserts the done output, than go to the memory panel and save as a file the contents of the memories A and B in binary form in two distinct files A.mem and B.mem, where we removed the first part of comment generated from Modelsym. \\
