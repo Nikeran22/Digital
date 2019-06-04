@@ -1151,7 +1151,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x0000037f       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(1.4.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x6d3a
+.debug_info     0x00000000     0x6d37
  .debug_info    0x00000000      0xa4d Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o
  .debug_info    0x00000a4d      0x4da Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
  .debug_info    0x00000f27      0xac1 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
@@ -1159,10 +1159,10 @@ OUTPUT(1.4.elf elf32-littlearm)
  .debug_info    0x000022c6     0x1280 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
  .debug_info    0x00003546      0x895 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usart.o
  .debug_info    0x00003ddb      0xb33 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
- .debug_info    0x0000490e     0x1cac Src/main.o
- .debug_info    0x000065ba      0x234 Src/stm32f4xx_it.o
- .debug_info    0x000067ee      0x52a Src/system_stm32f4xx.o
- .debug_info    0x00006d18       0x22 startup/startup_stm32f401xe.o
+ .debug_info    0x0000490e     0x1ca9 Src/main.o
+ .debug_info    0x000065b7      0x234 Src/stm32f4xx_it.o
+ .debug_info    0x000067eb      0x52a Src/system_stm32f4xx.o
+ .debug_info    0x00006d15       0x22 startup/startup_stm32f401xe.o
 
 .debug_abbrev   0x00000000     0x13d2
  .debug_abbrev  0x00000000      0x1dd Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.o

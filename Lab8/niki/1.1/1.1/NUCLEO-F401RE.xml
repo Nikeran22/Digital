@@ -12,8 +12,8 @@
 <targetDefinitions>
   <board id="nucleo-f401re">
     <name>NUCLEO-F401RE</name>
-    <dbgIF>SWD</dbgIF>
     <dbgIF>JTAG</dbgIF>
+    <dbgIF>SWD</dbgIF>
     <dbgDEV>ST-Link</dbgDEV>
     <mcuId>stm32f401retx</mcuId>
   </board>

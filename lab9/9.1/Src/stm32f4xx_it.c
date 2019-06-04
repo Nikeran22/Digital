@@ -182,7 +182,9 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-
+	static int x=0x12c0; // What is this number ?
+	 for(int i=0;i<x;i++);
+	 x = (x >> 2) | (((x & 1)^(x & 2)) << 4);
   /* USER CODE END SysTick_IRQn 0 */
   
   /* USER CODE BEGIN SysTick_IRQn 1 */
@@ -204,8 +206,8 @@ void TIM3_IRQHandler(void)
 {
 	// int value;
 	  int EOCflag;
-	   double Vq=0.013;
-	   int delta;
+	  double Vq=0.013;
+	  int delta;
   /* USER CODE BEGIN TIM3_IRQn 0 */
 	if(LL_TIM_IsActiveFlag_CC1(TIM3) != RESET)
 	{

@@ -110,18 +110,14 @@ int value;
   //ARR=419; PSC=99; Fck=84MHz
 
   LL_TIM_WriteReg(TIM3,CR1,LL_TIM_ReadReg(TIM3,CR1) | 0x1 );
-  SysTick_Config(SystemCoreClock / 1000);
+  //SysTick_Config(SystemCoreClock / 1000);
   while (1)
   {
     /* USER CODE END WHILE */
 	  value=LL_TIM_ReadReg(TIM3,CNT);
-	  if(value==LL_TIM_ReadReg(TIM3,ARR)){
+	  if(value<=LL_TIM_ReadReg(TIM3,ARR)){
 		  LL_GPIO_WriteReg(GPIOD,ODR,LL_GPIO_ReadReg(GPIOD,ODR)^0x4);
 	  }
-
-
-
-
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
