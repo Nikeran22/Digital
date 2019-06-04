@@ -76,18 +76,51 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 
-
+\section*{Output compare VS Reload}
+{
+	
+	In the following report the Output Compare register and/or auto-reload register can be calculated from the desired asserted flag frequency using the following formula:
+	\[F_{X}=\frac{F_{CLK}}{(OC+1)\cdot(ARR+1)}\;\;\;\;\; (1)\] 
+	
+	Notice that to correctly generate a square wave with a desired frequency $F_{X}$ exploiting the OC or ARR approach, the formula 1 should also be divided by a 2 factor.
+}
 
 \section*{1.1 }
-image 0: =
-image 1 <=
+Following the instructions on the lab8 document we created the project with cube mx, where just had to set the auto reload register to the proper value calculated with the formula mentioned before.\\
+In the source code we polled the counter register to a random integer smaller or equal than the ARR value to toggle the output pin (in our code we used the arr value). \\
+With the oscilloscope we can clearly see that this approach doesn't work because just a few times the MCU is detecting that the counter register and our random integer are equal. Instead when we use the condition $"counter<=arr"$ the pin is toggled every time that the MCU executes it, therefor we observed a frequency of 1.6 MHz.
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale = 0.4]{immagini/NewFile1}
+	\caption{condition $"counter=arr"$ }
+\end{figure}
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint1}
+	\caption{condition $"counter<=arr"$ }
+\end{figure}
 
 
 
 \section*{1.2 }
-image 2 e 4
-image 3 4mhz non ce la fa
+In this section we reused the code of the previous point but this time we polled the auto reload register flag.\\
+\begin{figure}[h!]
+	
+	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint4}
+	\caption{2 kHz wave }
+\end{figure}
+If we try to achieve 4 MHz we can see that the board can't deliver such a high frequency, actually we registered 1.6 MHz. 
+\begin{figure}[h!]
+	
+	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint3}
+	\caption{should be 4Mhz wave }
+\end{figure}
+
+
 \section*{1.3}
+In this section we had to use the capture compare unit in order to generate the square wave
 
 image 6
 

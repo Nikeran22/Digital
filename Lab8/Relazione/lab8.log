@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 18:58
 entering extended mode
 **./lab8.tex
 (lab8.tex
@@ -526,22 +526,59 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
 [1
 
 {C:/Users/lberc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab8.aux) ) 
+g>]
+<immagini/NewFile1.png, id=10, 803.0pt x 481.8pt>
+File: immagini/NewFile1.png Graphic file (type png)
+<use immagini/NewFile1.png>
+Package pdftex.def Info: immagini/NewFile1.png  used on input line 95.
+(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+<immagini/DS1Z_QuickPrint1.png, id=11, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint1.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint1.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint1.png  used on input line 101.
+
+(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<immagini/DS1Z_QuickPrint4.png, id=12, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint4.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint4.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint4.png  used on input line 111.
+
+(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+<immagini/DS1Z_QuickPrint3.png, id=13, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint3.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint3.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint3.png  used on input line 117.
+
+(pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
+[1 <./immagini/NewFile1.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./immagini/DS1Z_QuickPrint1.png (PNG copy)> <./immagini/DS1Z_QuickPrint4.pn
+g (PNG copy)>] [3 <./immagini/DS1Z_QuickPrint3.png (PNG copy)>] (lab8.aux) ) 
 Here is how much of TeX's memory you used:
- 16663 strings out of 492946
- 314813 string characters out of 3135629
- 363132 words of memory out of 3000000
- 20438 multiletter control sequences out of 15000+200000
+ 16686 strings out of 492946
+ 315422 string characters out of 3135629
+ 365132 words of memory out of 3000000
+ 20454 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab8.pdf (2 pages, 73823 bytes).
+ 40i,12n,63p,814b,500s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb>
+Output written on lab8.pdf (4 pages, 264449 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
