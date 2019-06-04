@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  28 MAY 2019 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  4 JUN 2019 16:29
 entering extended mode
 **./lab7.tex
 (lab7.tex
@@ -567,40 +567,39 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
 
 {C:/Users/nikil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
 g>]
-<NewFile1.png, id=10, 803.0pt x 481.8pt>
-File: NewFile1.png Graphic file (type png)
-<use NewFile1.png>
-Package pdftex.def Info: NewFile1.png  used on input line 85.
-(pdftex.def)             Requested size: 361.34666pt x 216.80798pt.
-
-Overfull \hbox (27.20247pt too wide) in paragraph at lines 90--93
+Overfull \hbox (27.20247pt too wide) in paragraph at lines 83--86
 \OT1/cmr/m/n/12 SWB4STM32, than the point-ers for the GPIOA[]MODER, GPIOA[]ODR,
  GPIOC[]MOER,
  []
 
-[1 <./NewFile1.png (PNG copy)>]
-<immagini/1_2.png, id=15, 461.47406pt x 432.49078pt>
+<immagini/1_2.png, id=10, 461.47406pt x 432.49078pt>
 File: immagini/1_2.png Graphic file (type png)
 <use immagini/1_2.png>
-Package pdftex.def Info: immagini/1_2.png  used on input line 104.
-(pdftex.def)             Requested size: 323.02963pt x 302.74147pt.
- [2 <./immagini/1_2.png>] (lab7.aux) ) 
+Package pdftex.def Info: immagini/1_2.png  used on input line 97.
+(pdftex.def)             Requested size: 230.73645pt x 216.24486pt.
+[1 <./immagini/1_2.png>]
+<NewFile1.png, id=17, 803.0pt x 481.8pt>
+File: NewFile1.png Graphic file (type png)
+<use NewFile1.png>
+Package pdftex.def Info: NewFile1.png  used on input line 114.
+(pdftex.def)             Requested size: 361.34666pt x 216.80798pt.
+ [2 <./NewFile1.png (PNG copy)>] (lab7.aux) ) 
 Here is how much of TeX's memory you used:
- 16669 strings out of 492945
- 317637 string characters out of 3126253
- 364971 words of memory out of 3000000
- 20440 multiletter control sequences out of 15000+200000
- 540188 words of font info for 52 fonts, out of 3000000 for 9000
+ 16668 strings out of 492945
+ 317620 string characters out of 3126253
+ 363971 words of memory out of 3000000
+ 20439 multiletter control sequences out of 15000+200000
+ 539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,63p,814b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb>
-Output written on lab7.pdf (3 pages, 222801 bytes).
+ 40i,11n,63p,814b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/User
+s/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc1
+0.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr12.pfb>
+Output written on lab7.pdf (3 pages, 222980 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

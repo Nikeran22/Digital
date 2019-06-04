@@ -76,15 +76,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 
-\subsection{Generating a square wave}
-In order to make this part of the laboratory we modified the code from the previous exercise. We changed the output pin from the one associated with the LED to the one related to the D2 pin of the board (PA10 of the microcontroller).
-At the beginning we decided to try the code without adding the code given in the description of exercise and we saw a stable waveform. After adding the code, we noticed that the period of the square wave was unstable. The reason for this unstability is the fact that the additional code generated a pseudo-random delays every system clock tick.
 
-\begin{figure}[h]
-	\center
-	\includegraphics[scale = 0.45]{NewFile1.png}
-	\caption{the generated waveform with the disturbance}
-\end{figure}
+
 
 \section*{1.1 Using a switch to toggle the LED, Low Level Approach}
 Following the instructions in the Lab7document we created an empty project in SWB4STM32, than the pointers for the GPIOA\_MODER, GPIOA\_ODR, GPIOC\_MOER, GPIOC\_IDR and RCC\_AHB1ENR have been initialized. \\
@@ -101,17 +94,26 @@ Apart from the I/O configuration, the algorithm is implemented as the point 1.1.
 
 	\begin{figure}[!h]
 		\centering
-		\includegraphics[scale = 0.7]{immagini/1_2.png}
+		\includegraphics[scale = 0.5]{immagini/1_2.png}
 		\caption{CubeMX GPIO configurations}
 	\end{figure}
-
-\section*{2 Varying the blinking frequency}
+\newpage
+\section*{1.3 Varying the blinking frequency}
 
 Varying the maximum "for" counting number we can play on the blinking frequency.
 The maximum appreciable frequency is around , due to 2 main reasons:
 The maximal frame rate humans can perceive is around 70 Hz. Furthermore the LED being not an ideal component shows parasitic effects (Equivalent RC filter) that decrease the maximum appreciable frequency to about 60 Hz. 
 
+\section*{2 Generating a square wave}
+In order to make this part of the laboratory we modified the code from the previous exercise. We changed the output pin from the one associated with the LED to the one related to the D2 pin of the board (PA10 of the microcontroller).
+At the beginning we decided to try the code without adding the code given in the description of exercise and we saw a stable waveform. After adding the code, we noticed that the period of the square wave was unstable. The reason for this unstability is the fact that the additional code generated a pseudo-random delays every system clock tick.
 
+
+\begin{figure}[h!]
+	\center
+	\includegraphics[scale = 0.45]{NewFile1.png}
+	\caption{the generated waveform with the disturbance}
+\end{figure}
 
 
 \end{document}
