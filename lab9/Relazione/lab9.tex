@@ -75,12 +75,31 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\section*{Output compare VS Reload}
+{
+	
+	In the following report the Output Compare register and/or auto-reload register can be calculated from the desired asserted flag frequency using the following formula:
+	\[F_{X}=\frac{F_{CLK}}{(OC+1)\cdot(ARR+1)}\;\;\;\;\; (1)\] 
+	
+	Notice that to correctly generate a square wave with a desired frequency $F_{X}$ exploiting the OC or ARR approach, the formula 1 should also be divided by a 2 factor.
+}
 
+\section*{1 - Interrupt-based variable frequency square waveform generator}
 
+In the following section a variable frequency square wave has been implemented exploiting the interrupt approach. 
+\[ delta1 = (OCmax1 - OCmin1) * lettura/ADCmax + OCmin1;\]
+ 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint10.png}
+	\caption{}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint11.png}
+	\caption{}
+\end{figure}
 
-\section*{1}
-image 9 fmax
-image 10 fmin
 
 sono molto più stabili
 no jitter sensa systick, piccolo jitter con systik
