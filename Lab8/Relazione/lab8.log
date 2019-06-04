@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 17:58
 entering extended mode
-**./lab7.tex
-(lab7.tex
+**./lab8.tex
+(lab8.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -450,8 +450,8 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/physics\physics.sty"
 Package: physics 
-) (lab7.aux)
-\openout1 = `lab7.aux'.
+) (lab8.aux)
+\openout1 = `lab8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -526,7 +526,7 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
 [1
 
 {C:/Users/lberc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab7.aux) ) 
+g>] [1] (lab8.aux) ) 
 Here is how much of TeX's memory you used:
  16663 strings out of 492946
  314813 string characters out of 3135629
@@ -539,7 +539,7 @@ Here is how much of TeX's memory you used:
 /cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab7.pdf (2 pages, 73601 bytes).
+Output written on lab8.pdf (2 pages, 73823 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

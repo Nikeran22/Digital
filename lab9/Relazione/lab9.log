@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  4 JUN 2019 17:59
 entering extended mode
-**./lab7.tex
-(lab7.tex
+**./lab9.tex
+(lab9.tex
 LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -450,8 +450,8 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/physics\physics.sty"
 Package: physics 
-) (lab7.aux)
-\openout1 = `lab7.aux'.
+) (lab9.aux)
+\openout1 = `lab9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -526,20 +526,22 @@ Package pdftex.def Info: polito.jpg  used on input line 41.
 [1
 
 {C:/Users/lberc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./polito.jp
-g>] [1] (lab7.aux) ) 
+g>] ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [1] (lab9.aux) ) 
 Here is how much of TeX's memory you used:
- 16663 strings out of 492946
- 314813 string characters out of 3135629
- 363132 words of memory out of 3000000
- 20438 multiletter control sequences out of 15000+200000
+ 17159 strings out of 492946
+ 319937 string characters out of 3135629
+ 363133 words of memory out of 3000000
+ 20931 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on lab7.pdf (2 pages, 73601 bytes).
+ 40i,11n,63p,814b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on lab9.pdf (2 pages, 73900 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
