@@ -259,6 +259,8 @@ static void MX_USART2_UART_Init(void)
 
   /* USER CODE END USART2_Init 2 */
 
+
+
 }
 
 /** 

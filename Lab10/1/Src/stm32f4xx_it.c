@@ -209,7 +209,7 @@ void TIM3_IRQHandler(void) { //works up to around 50KHz
 				Count2 = LL_TIM_ReadReg(TIM3, CCR1);
 				//TON
 				if (Count2 > Count1)
-					Toff = (Count2 - Count1) * PSC / (Fclk);
+					Toff = (Count2 - Count1) * PSC / (  Fclk);
 				else
 					Toff = (Count2 - Count1 + Tperiod) * PSC / (Fclk);
 				//TOFF
