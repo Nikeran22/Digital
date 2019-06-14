@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  4 JUN 2019 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.3)  14 JUN 2019 14:05
 entering extended mode
 **./lab9.tex
 (lab9.tex
@@ -483,21 +483,46 @@ Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/physics\physics.st
 y"
 Package: physics 
+)
+("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen163
+\captionmargin@=\dimen164
+\captionwidth=\dimen165
+\caption@tempdima=\dimen166
+\caption@indent=\dimen167
+\caption@parindent=\dimen168
+\caption@hangindent=\dimen169
+)
+\c@caption@flags=\count279
+\c@ContinuedFloat=\count280
+)
+("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count281
+\c@subtable=\count282
 ) (lab9.aux)
 \openout1 = `lab9.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 ("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -505,16 +530,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen163
+\scratchcounter=\count283
+\scratchdimen=\dimen170
 \scratchbox=\box56
-\nofMPsegments=\count280
-\nofMParguments=\count281
+\nofMPsegments=\count284
+\nofMParguments=\count285
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen164
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen171
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
@@ -558,10 +583,12 @@ Dictionary: translator-basic-dictionary, Language: English
 breviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 <polito.jpg, id=1, 225.84375pt x 225.84375pt>
 File: polito.jpg Graphic file (type jpg)
 <use polito.jpg>
-Package pdftex.def Info: polito.jpg  used on input line 41.
+Package pdftex.def Info: polito.jpg  used on input line 45.
 (pdftex.def)             Requested size: 169.38239pt x 169.38239pt.
  [1
 
@@ -570,44 +597,68 @@ g>]
 <immagini/DS1Z_QuickPrint10.png, id=10, 803.0pt x 481.8pt>
 File: immagini/DS1Z_QuickPrint10.png Graphic file (type png)
 <use immagini/DS1Z_QuickPrint10.png>
-Package pdftex.def Info: immagini/DS1Z_QuickPrint10.png  used on input line 94.
-
+Package pdftex.def Info: immagini/DS1Z_QuickPrint10.png  used on input line 102
+.
 (pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
 <immagini/DS1Z_QuickPrint11.png, id=11, 803.0pt x 481.8pt>
 File: immagini/DS1Z_QuickPrint11.png Graphic file (type png)
 <use immagini/DS1Z_QuickPrint11.png>
-Package pdftex.def Info: immagini/DS1Z_QuickPrint11.png  used on input line 99.
-
+Package pdftex.def Info: immagini/DS1Z_QuickPrint11.png  used on input line 107
+.
 (pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-("C:\Users\nikil\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
-[1 <./immagini/DS1Z_QuickPrint10.png (PNG copy)>] [2 <./immagini/DS1Z_QuickPrin
-t11.png (PNG copy)>] (lab9.aux) ) 
+[1 <./immagini/DS1Z_QuickPrint10.png (PNG copy)>]
+<immagini/DS1Z_QuickPrint13.png, id=19, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint13.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint13.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint13.png  used on input line 118
+.
+(pdftex.def)             Requested size: 305.14317pt x 183.08589pt.
+ [2 <./immagini/DS1Z_QuickPrint11.png (PNG copy)> <./immagini/DS1Z_QuickPrint13
+.png (PNG copy)>]
+<immagini/DS1Z_QuickPrint14.png, id=23, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint14.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint14.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint14.png  used on input line 144
+.
+(pdftex.def)             Requested size: 200.74951pt x 120.44969pt.
+<immagini/DS1Z_QuickPrint15.png, id=24, 803.0pt x 481.8pt>
+File: immagini/DS1Z_QuickPrint15.png Graphic file (type png)
+<use immagini/DS1Z_QuickPrint15.png>
+Package pdftex.def Info: immagini/DS1Z_QuickPrint15.png  used on input line 148
+.
+(pdftex.def)             Requested size: 200.74951pt x 120.44969pt.
+
+Overfull \hbox (29.77951pt too wide) in paragraph at lines 148--149
+[][] 
+ []
+
+[3 <./immagini/DS1Z_QuickPrint14.png (PNG copy)> <./immagini/DS1Z_QuickPrint15.
+png (PNG copy)>] (lab9.aux) ) 
 Here is how much of TeX's memory you used:
- 17163 strings out of 492945
- 322919 string characters out of 3126253
- 363972 words of memory out of 3000000
- 20931 multiletter control sequences out of 15000+200000
+ 17837 strings out of 492945
+ 339171 string characters out of 3126253
+ 386924 words of memory out of 3000000
+ 21597 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,63p,814b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/nikil/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Us
-ers/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab9.pdf (3 pages, 196291 bytes).
+ 40i,11n,63p,814b,538s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/nikil/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nikil/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/
+nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/nikil/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nikil/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on lab9.pdf (4 pages, 346961 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

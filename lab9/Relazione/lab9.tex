@@ -12,6 +12,10 @@
 \usepackage{xcolor}
 \usepackage{siunitx}
 \usepackage{physics}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
 \setmarginsrb{3 cm}{2 cm}{3 cm}{2 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
 
 \title{Lab 09}													% Title
@@ -87,34 +91,66 @@
 \section*{1 - Interrupt-based variable frequency square waveform generator}
 
 In the following section a variable frequency square wave has been implemented exploiting the interrupt approach. 
-\[ delta1 = (OCmax1 - OCmin1) * lettura/ADCmax + OCmin1;\]
+The frequency of the square wave has been set using a potentiometer connected to a GPIO pin of the board. 
+The internal ADC converts the analog voltage level provided by the pot into a proper delay:
+\[ delta = \frac{OC_{max1} - OC_{min1}}{ADC_{max}} \cdot ADC_{read} + OC_{min1}\]
+
+An interrupt linked to the TIM3 (in OC mode) triggers the toggling of the output pin.
  
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint10.png}
-	\caption{}
+	\caption{Maximum frequency generated}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale = 0.4]{immagini/DS1Z_QuickPrint11.png}
-	\caption{}
+	\caption{Minimum frequency generated}
+\end{figure}
+
+The minimum and maximum frequency of the output waveform generated corresponds to the same values generated in the previous lab, nonetheless they results much more stable and not affected by jitter.
+
+\section*{2.1 - Three interrupts}
+In this section a 3-bit clock process has been implemented using the interrupt approach. Three different channels of the same Timer were initially configured in OC mode to produce the given period square wave.
+Furthermore the output pin has been configured directly in CubeMX to automatically toggling. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale = 0.38]{immagini/DS1Z_QuickPrint13.png}
+	\caption{Output square waveforms with different period}
 \end{figure}
 
 
-sono molto più stabili
-no jitter sensa systick, piccolo jitter con systik
-
-
-\section*{2.1}
-
-image 12 -13 -11
 
 \section*{2.2 }
-il jitter non è apprezzabile perche l'isr è corta???
 
+The previous project discussed in $section\; 2.1$
+has been updated adding the toggling of an LED every time the pushbutton is pressed. 
+Another interrupt connected to the GPIO has been implemented and its ISR is responsible for the LED toggling.
+
+The jitter doesn't affect in an appreciable way the correct execution of the program.
 \section*{2.3 }
-image 14 min
-image 15 max
+
+In this section the project 2.1 has been modified. The potentiometer is now responsible for the frequency change of the three square wave, with different ranges.
+
+This time the ADC was used in single conversion mode. Then every new conversion was activated using the channel 2 of TIM2 in OC mode, configured with a period of 500 ms in interrupt mode. 
+
+The figures below show the square waves generated for minimum and maximum achievable frequency, exploiting the potentiometer.
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{0.5\textwidth}
+		%\centering
+		\includegraphics[scale = 0.25]{immagini/DS1Z_QuickPrint14.png}
+	\end{subfigure}%
+	\begin{subfigure}{0.4\textwidth}
+		%\centering
+		\includegraphics[scale = 0.25]{immagini/DS1Z_QuickPrint15.png}
+	\end{subfigure}
+	\caption{Minimum and maximum frequency}
+\end{figure}
+
+
 
 \end{document}
 
