@@ -105,15 +105,15 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  for(i=1;i<101;i++){
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i*0.84);
-	  HAL_Delay(10);
+	  for(i=1;i<101;i++){ //DC from 0% to 100% in 1s
+	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i*0.84); //change DC
+	  HAL_Delay(10); wait 10ms
 	  }
-	  //84
+	  //Timer period:84
 
-	  for(i=1;i<101;i++){
-	 	  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,84-i*0.84);
-	 	  HAL_Delay(10);
+	  for(i=1;i<101;i++){ //DC from 100% to 0% in 1s
+	 	  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,84-i*0.84); //change DC
+	 	  HAL_Delay(10); // wait 10ms
 	  }
     /* USER CODE BEGIN 3 */
   }
@@ -183,9 +183,9 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 4; //9
+  htim2.Init.Prescaler = 9;  //4
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 166; //83
+  htim2.Init.Period = 83; //166
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
