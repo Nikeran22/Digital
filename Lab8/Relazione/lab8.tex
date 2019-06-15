@@ -129,12 +129,14 @@ In this section we had to use the capture compare unit in order to generate the 
 
 
 \section*{1.4 }
-image 7 e 9
+In this section we had to generate a square wave with variable frequency between 800Hz and 4.5kHz. To control the output frequency it was used a potentiometer to generate a variable voltage. Than we sample this voltage with the ADC1 peripheral in continuous mode and in the software we poll the $EOC$ flag to know when a new sample is ready to be read. With the value we read we can generate a variable increment to be added to the capture compare register in order to obtain a variable output frequency between 800Hz and 4.5kHz.\\
 
-800 Hz \space $->$ oc register: 531\\
-1.2 kHz $->$ oc register: 353\\
-3.0 kHz $->$ oc register: 142\\
-4.5 kHz $->$ oc register: 95\\
+Here we report the value of the increment of the oc register for each output frequency. We can observe that for increasing frequencies the increment becomes smaller thus generating an event more often.\\
+
+800 Hz \space $->$increment of oc register: 531\\
+1.2 kHz $->$ increment of oc register: 353\\
+3.0 kHz $->$ increment of oc register: 142\\
+4.5 kHz $->$ increment of oc register: 95\\
 
 
 \end{document}

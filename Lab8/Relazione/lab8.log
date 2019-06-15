@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.7)  5 JUN 2019 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.1)  15 JUN 2019 14:11
 entering extended mode
 **./lab8.tex
 (lab8.tex
@@ -21,10 +21,10 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/04/03 3.29 The Babel package
+Package: babel 2018/11/13 3.27 The Babel package
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/04/03 3.29 Babel switching mechanism
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
@@ -37,7 +37,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 Language: english 2017/06/06 v3.3r English support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/04/03 3.29 Babel common definitions
+File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
@@ -224,10 +224,10 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx.sty"
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2019-04-06 L3 programming layer (loader) 
+Package: expl3 2019-03-26 L3 programming layer (loader) 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
-Package: expl3 2019-04-06 L3 programming layer (code)
+Package: expl3 2019-03-26 L3 programming layer (code)
 \c_max_int=\count105
 \l_tmpa_int=\count106
 \l_tmpb_int=\count107
@@ -379,7 +379,7 @@ Package: expl3 2019-04-06 L3 programming layer (code)
 \c__deprecation_minus_one=\count190
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3pdfmode.def"
-File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
+File: l3pdfmode.def 2019-03-26 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count191
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
@@ -565,21 +565,31 @@ Package pdftex.def Info: immagini/DS1Z_QuickPrint6.png  used on input line 126.
 
 (pdftex.def)             Requested size: 321.1943pt x 192.71658pt.
 [2 <./immagini/DS1Z_QuickPrint1.png (PNG copy)> <./immagini/DS1Z_QuickPrint4.pn
-g (PNG copy)>] [3 <./immagini/DS1Z_QuickPrint3.png (PNG copy)> <./immagini/DS1Z
-_QuickPrint6.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
+g (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+[3 <./immagini/DS1Z_QuickPrint3.png (PNG copy)> <./immagini/DS1Z_QuickPrint6.pn
+g (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 [4] (lab8.aux) ) 
 Here is how much of TeX's memory you used:
- 16691 strings out of 492946
- 315577 string characters out of 3135629
- 365132 words of memory out of 3000000
- 20458 multiletter control sequences out of 15000+200000
+ 16683 strings out of 492945
+ 315456 string characters out of 3135514
+ 364971 words of memory out of 3000000
+ 20450 multiletter control sequences out of 15000+200000
  539881 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,63p,814b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,11n,63p,814b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Pro
@@ -587,7 +597,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on lab8.pdf (5 pages, 304586 bytes).
+Output written on lab8.pdf (5 pages, 305569 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
